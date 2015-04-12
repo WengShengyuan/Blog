@@ -1,5 +1,5 @@
 username: WengShengyuan
-baseurl: /Blog
+baseurl: /blog
 markdown: redcarpet
 safe: false
 pygments: true
