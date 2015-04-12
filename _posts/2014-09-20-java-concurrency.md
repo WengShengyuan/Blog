@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default_comments
 title: Java 中的并发
 comments: true
 ---
