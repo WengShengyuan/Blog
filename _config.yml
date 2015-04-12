@@ -1,6 +1,6 @@
-username: WengShengyuan
-baseurl: /Blog
-markdown: redcarpet
-safe: false
-pygments: true
-title: 翁汤圆
+username:WengShengyuan
+baseurl:/Blog
+markdown:redcarpet
+safe:false
+pygments:true
+title:翁汤圆
