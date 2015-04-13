@@ -153,27 +153,27 @@ web<br>
 
 # 异常处理
 
-## 抛出
+## 抛出与捕获
 
 * Controller-Service-Dao 三层架构
 <p>
 	* `Dao` 中不涉及业务，一般错误都是系统异常，不做处理，直接抛出`Exception`， 在`Service`中做进一步处理。
 	
 	```java
-		public void doSomething() throws Exception{
+		public void doSomething() throws Exception {
 			try{
 				someFunction();
 			} catch(Exception e){
 				throw e;
 			}
 	
-	}
+		}
 	```
 	
 	* `Service` 中涉及复杂业务，一般错误处理在这里处理完成后抛出。
 	
 	```java
-		public void doSomething() throws Exception{
+		public void doSomething() throws Exception {
 			
 			logger.debug();
 			
@@ -193,9 +193,41 @@ web<br>
 		}
 	```
 	
+	* `Controller`中捕获系统抛出的异常，并交予用户处理。
+	
+	```java
+		public void doSomething() throws Exception {
+			
+			/*为保证系统正常运行，一般进行try-catch操作，不管正常与否均能返回结果*/
+			boolean statusFlag;
+			String ErrMsg;
+			try{
+				service.doSomething();
+				statusFlag = true;
+			} catch (SystemException e) {
+				statusFlag = false;
+				ErrMsg = e.getMessage();
+			} catch (BusinessException e) {
+				statusFlag = false;
+				ErrMsg = e.getMessage();
+			} catch (Exception e) {
+				statusFlag = false;
+				//系统内未捕获的错误，应该记录日志
+				logger.error();
+				ErrMsg = e.toString();
+			} 
+			//最终判断是否成功执行
+			if(statusFlag) {
+				return success;
+			} else {
+				return ErrMsg;
+			}
+			
+		}
+	```
+	
 </p>
 
-## 捕获
 
 # 日志系统
 
