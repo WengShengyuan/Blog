@@ -133,7 +133,7 @@ web<br>
 
 ## 包的命名规范
 
-* m.公司名.项目名.模块名
+* com.公司名.项目名.模块名
 
 # Controller - Service - Dao 的三层结构
 
