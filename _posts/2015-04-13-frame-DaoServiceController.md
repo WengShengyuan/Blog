@@ -59,18 +59,18 @@ common-utils<br>
 ### core
 具体模块的核心工程:<br>
 core<br>
- |_commons<br>
+ |-commons<br>
  &nbsp;&nbsp;|-utils<br>
  &nbsp;&nbsp;|-comstatic<br>
  &nbsp;&nbsp;|-config<br>
- |_Module_1<br>
+ |-Module_1<br>
  &nbsp;&nbsp;|-Dao<br>
- &nbsp;&nbsp;|_Domain<br>
- &nbsp;&nbsp;|_Service<br>
- |_Module_2<br>
- &nbsp;&nbsp;|_Dao<br>
- &nbsp;&nbsp;|_Domain<br>
- &nbsp;&nbsp;|_Service<br>
+ &nbsp;&nbsp;|-Domain<br>
+ &nbsp;&nbsp;|-Service<br>
+ |-Module_2<br>
+ &nbsp;&nbsp;|-Dao<br>
+ &nbsp;&nbsp;|-Domain<br>
+ &nbsp;&nbsp;|-Service<br>
  。。。。<br>
 
 * 公共库
