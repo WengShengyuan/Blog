@@ -23,10 +23,10 @@ Worksapce<br>
 全系统（包括其它模块）公用的部分:<br>
 common-utils<br>
 |-exception<br>
-|_-tils<br>
+|-utils<br>
 |-Generic<br>
-	|-GenericDao<br>
-	|-GenericService<br>
+&nbsp&nbsp|-GenericDao<br>
+&nbsp&nbsp|-GenericService<br>
 
 
 * 异常处理
@@ -60,18 +60,18 @@ common-utils<br>
 具体模块的核心工程:<br>
 core<br>
 |_commons<br>
---|-utils<br>
---|-comstatic<br>
---|-config<br>
+&nbsp&nbsp|-utils<br>
+&nbsp&nbsp|-comstatic<br>
+&nbsp&nbsp|-config<br>
 |_Module_1<br>
---|-Dao<br>
---|_Domain<br>
---|_Service<br>
+&nbsp&nbsp|-Dao<br>
+&nbsp&nbsp|_Domain<br>
+&nbsp&nbsp|_Service<br>
 |_Module_2<br>
---|_Dao<br>
---|_Domain<br>
---|_Service<br>
-....<br>
+&nbsp&nbsp|_Dao<br>
+&nbsp&nbsp|_Domain<br>
+&nbsp&nbsp|_Service<br>
+。。。。<br>
 
 * 公共库
 <p>
