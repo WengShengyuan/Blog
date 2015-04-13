@@ -12,9 +12,9 @@ comments: false
 项目大致分为公共包(common-utils)、核心(core)、前端(web)三个工程。<br>
 大致目录:<br>
 Worksapce<br>
-|-common-utils<br>
-|-core<br>
-|-web<br>
+ |-common-utils<br>
+ |-core<br>
+ |-web<br>
 
 
 ## 公共包
@@ -22,11 +22,11 @@ Worksapce<br>
 ### common-utils
 全系统（包括其它模块）公用的部分:<br>
 common-utils<br>
-|-exception<br>
-|-utils<br>
-|-Generic<br>
-&nbsp&nbsp|-GenericDao<br>
-&nbsp&nbsp|-GenericService<br>
+ |-exception<br>
+ |-utils<br>
+ |-Generic<br>
+ &nbsp;&nbsp;|-GenericDao<br>
+ &nbsp;&nbsp;|-GenericService<br>
 
 
 * 异常处理
@@ -59,19 +59,19 @@ common-utils<br>
 ### core
 具体模块的核心工程:<br>
 core<br>
-|_commons<br>
-&nbsp&nbsp|-utils<br>
-&nbsp&nbsp|-comstatic<br>
-&nbsp&nbsp|-config<br>
-|_Module_1<br>
-&nbsp&nbsp|-Dao<br>
-&nbsp&nbsp|_Domain<br>
-&nbsp&nbsp|_Service<br>
-|_Module_2<br>
-&nbsp&nbsp|_Dao<br>
-&nbsp&nbsp|_Domain<br>
-&nbsp&nbsp|_Service<br>
-。。。。<br>
+ |_commons<br>
+ &nbsp;&nbsp;|-utils<br>
+ &nbsp;&nbsp;|-comstatic<br>
+ &nbsp;&nbsp;|-config<br>
+ |_Module_1<br>
+ &nbsp;&nbsp;|-Dao<br>
+ &nbsp;&nbsp;|_Domain<br>
+ &nbsp;&nbsp;|_Service<br>
+ |_Module_2<br>
+ &nbsp;&nbsp;|_Dao<br>
+ &nbsp;&nbsp;|_Domain<br>
+ &nbsp;&nbsp;|_Service<br>
+ 。。。。<br>
 
 * 公共库
 <p>
