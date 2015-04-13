@@ -1,6 +1,6 @@
 ---
 layout: default_nocomments
-title: FRAME - 个人参与SpringMVC框架项目的心得
+title: 个人参与SpringMVC框架项目的心得
 comments: false
 ---
 
@@ -136,6 +136,16 @@ web<br>
 * com.公司名.项目名.模块名
 
 # Controller - Service - Dao 的三层结构
+
+## 阐述
+
+* `Controller`用于与用户直接交互，浏览器，`HTTP`请求等。
+
+* `Service`用于业务逻辑处理。<strong>注意接口输入输出的规范</strong>，这样有利于接口复用。
+
+*`Dao`用于直接与数据实体交互，实现数据的简单提取与处理。<strong>避免在`Dao`层出现跨表操作现象</strong>.
+
+## 结构
 
 # 异常处理
 
