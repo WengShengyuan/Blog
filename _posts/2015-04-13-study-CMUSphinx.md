@@ -190,7 +190,43 @@ comments: true
 
 # 配置调优分析
 
-## FontEnd 端点检测
+## FontEnd 相关参数
+
+### epFrontEnd 带端点检测
+
+* 包含组件`speechClassifier`, `speechMarker` 以及 `nonSpeechDataFilter` 是端点检测的基本组件，构成默认的FrontEnd pointer。
+
+* `speechClassifier`用于将Speech和背景声音区别开来， threshold门限用于设置灵敏度，值越低，越灵敏。
+
+* `speechMarker`用于确定speech结尾的非speech部分的长度，以保证手机信息的完整性。默认50ms
+
+* `MicroPhone` 中的  'msecPerRead' 参数设置一次读取的时长 默认 10ms。 'closeBetweenUtterances'  设置在说话间隙是否关闭麦克风，建议不关闭，因为开关不稳定(linux)。
+
+* `dataBlocker` 用于设置音频块的长度, 默认 10ms.
+
+* `Preemphasizer` 是一个高通滤波器，用于增加高频的信息能量
+
+* `fft`这里用的是DiscreteCosineTransform，函数变换用，梅尔频谱系数，MFCC.
+
+* `liveCMN` 计算迄今为止的倒谱平均值。
+
+* `featureExtraction` 这里用的是 DeltasFeatureExtractor 倒谱三角量计算
+
+## SearchManageer
+
+### 连续语音识别使用 `wordPruningSearchManager`
+
+* `linguist这里用的是lexTreeLinguist`不超过三音节较大的n-gram文法 - 这语言学家将直接从N - gram语言模型生成的搜索空间。
+支持的词汇是存在于字典中的语言模型中发现的字和词的交集。假定单词在单词表中的所有序列是有效的。要为其定义acoustic Model 和 language Model
+
+* `linguist` 如果用 flatlinguist就可以用grammar.
+
+* `pruner` 这里用的是 SimplePrunner 剪枝用的
+
+* `threadedScoer`多线程 评分 计算
+
+* `SimpleActiveListManager`用于存放待扩展的Token
+
 
 
 
