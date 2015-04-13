@@ -67,9 +67,10 @@ comments: false
 * 业务逻辑层 `Service` Extends `GenericService`
 <p>
 	1) 接口 `Service`<br>
-		针对某一项业务的接口，可能涉及多个表`Entity`，因此在`Service`层可以调用多个`Dao`。
+		针对某一项业务的接口，可能涉及多个表`Entity`，因此在`Service`层可以调用多个`Dao`。<br>
 	2) 实现 `ServiceImpl`<br> 
-		针对某一项业务的具体实现。<strong>为实现数据库的事务处理，在`Service`的实现上，应加上事务标签`@Transactional`</strong>。
+		针对某一项业务的具体实现。<br>
+		<strong>为实现数据库的事务处理，在`Service`的实现上，应加上事务标签`@Transactional`</strong>。
 </p>
 
 
