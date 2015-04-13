@@ -1,6 +1,6 @@
 ---
 layout: default
-title: [MAVEN]如何将JAVA项目转为MAVEN项目
+title: 如何将JAVA项目转为MAVEN项目
 comments: false
 ---
 
