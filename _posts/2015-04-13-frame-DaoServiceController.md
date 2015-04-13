@@ -9,11 +9,25 @@ comments: false
 
 # 项目结构
 
+项目大致分为公共包(common-utils)、核心(core)、前端(web)三个工程。<br>
+大致目录:<br>
+Worksapce<br>
+|_common-utils<br>
+|_core<br>
+|_web<br>
+
+
 ## 公共包
-项目大致分为公共包、核心、前端三个工程。
 
 ### common-utils
-全系统（包括其它模块）公用的部分：
+全系统（包括其它模块）公用的部分:<br>
+common-utils<br>
+|_exception<br>
+|_utils<br>
+|_Generic<br>
+--|_GenericDao<br>
+--|_GenericService<br>
+
 
 * 异常处理
 <p>
@@ -43,7 +57,21 @@ comments: false
 ## 项目工程
 
 ### core
-具体模块的核心工程
+具体模块的核心工程:<br>
+core<br>
+|_commons<br>
+--|_utils<br>
+--|_comstatic<br>
+--|_config<br>
+|_Module_1<br>
+--|_Dao<br>
+--|_Domain<br>
+--|_Service<br>
+|_Module_2<br>
+--|_Dao<br>
+--|_Domain<br>
+--|_Service<br>
+....<br>
 
 * 公共库
 <p>
@@ -69,13 +97,14 @@ comments: false
 	1) 接口 `Service`<br>
 		针对某一项业务的接口，可能涉及多个表`Entity`，因此在`Service`层可以调用多个`Dao`。<br>
 	2) 实现 `ServiceImpl`<br> 
-		针对某一项业务的具体实现。<br>
+		针对某一项业务的具体实现。<br>	
 		<strong>为实现数据库的事务处理，在`Service`的实现上，应加上事务标签`@Transactional`</strong>。
 </p>
 
 
 
 ### web
+前端工程:<br>
 
 * 控制器 `Controller`
 
