@@ -105,12 +105,35 @@ core<br>
 
 ### web
 前端工程:<br>
+web<br>
+|-controller<br>
+&nbsp;&nbsp;|-Module_1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|-ModuleController<br>
+|-webapp<br>
+&nbsp;&nbsp;|-WEB-INF<br>
+&nbsp;&nbsp;|-resource<br>
+
 
 * 控制器 `Controller`
+<p>
+用来控制页面跳转<br>
+	1) 返回页面与数据 `ModelAndView`。<br>
+	使用 'RequestMapping` 标签。<br>
+	2) 返回数据实体<br>
+	使用 `ResponseBody`+`RequestMapping` 标签。<br>
+	一般Mapping时候在路径上加上`/api/`比较好。这样有利于明显标志数据与页面的分离。 <br>
+	* 3) 在`Controller`上方也可以加入统一的`Mapping`路径，这样可以用于在有用户认证拦截的框架中(如:`Shiro`)实现统一的免密连接。多用于`api`或者后台调试页面。 
+</p>
 
 * 资源 `webapp`
+<p>
+	用于一般资源文件的放置。<br>
+	一般`resource`可以放置`images`,`css`,`javascript`等文件。`WEB-INF`中放置`html`文件。
+</p>
 
 ## 包的命名规范
+
+* m.公司名.项目名.模块名
 
 # Controller - Service - Dao 的三层结构
 
