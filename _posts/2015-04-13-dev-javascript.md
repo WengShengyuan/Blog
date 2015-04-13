@@ -75,7 +75,7 @@ comments: true
 
 ### 操作cookie
 
-* 调用jquery 的 $.cookei 待补充
+* 调用jquery 的 $.cookie 待补充
 
 * 直接实现
 
@@ -120,7 +120,7 @@ comments: true
 	    		}
 			} 
 		return null
-	}　
+	}
 	
 
 ```
@@ -177,11 +177,26 @@ comments: true
 
 # jquery-mobile
 
+## api
+
+<a href = "http://api.jquerymobile.com/">API</a>
+
 ## 页面载入特性
+
+在jqeury-mobile框架中进行页面跳转时候出现第二页面的js脚本不执行的情况。
+
+* 特性与解决
+
+卸载jquery-mobile页面的<head>中的js引用只会在打开第一个页面时候载入，之后的页面跳转仅载入<page>内的内容，所以第二页面的<head>实际没有起作用。<br>
+解决方式:<br>
+在第二页需要继续引入的包放在<page>中。
 
 # bootstrap
 
 ## 可视化构建
+
+页面框架构建臂jquery-mobile方便。有可视化构建工具<br>
+<a href="http://www.layoutit.com/">layoutIt!</a>
 
 
 
