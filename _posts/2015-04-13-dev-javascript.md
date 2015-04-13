@@ -198,5 +198,9 @@ comments: true
 页面框架构建臂jquery-mobile方便。有可视化构建工具<br>
 <a href="http://www.layoutit.com/">layoutIt!</a>
 
+# 提高javascript性能的技巧
+
+## 待补充
+
 
 
