@@ -212,6 +212,16 @@ comments: true
 
 * `featureExtraction` 这里用的是 DeltasFeatureExtractor 倒谱三角量计算
 
+### 一些影响因素
+
+* speechClassifier、speechMarker、nonSpeechDataFilter、denoise 对识别准确率有负面影响。
+
+	* Dither 加入人工噪音，防止能量为0时候崩溃，降低准确率
+	
+	* EnergyFilter 抛弃0能量帧，是Dither的替代品，降低准确率
+	
+	* Preemphasizer 高通滤波器，准确率较好
+
 ## SearchManageer
 
 ### 连续语音识别使用 `wordPruningSearchManager`
