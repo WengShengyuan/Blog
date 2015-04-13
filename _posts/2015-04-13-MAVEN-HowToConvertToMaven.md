@@ -1,8 +1,9 @@
 ---
 layout: default
-title: 如何将JAVA项目转为MAVEN项目
+title: 如何将JAVA工程转为MAVEN工程
 comments: false
 ---
+
 
 本文内容出自 <a href = "http://www.cnblogs.com/rushoooooo/p/3558499.html">Java工程转换为Maven工程</a>
 
