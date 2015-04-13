@@ -12,9 +12,9 @@ comments: false
 项目大致分为公共包(common-utils)、核心(core)、前端(web)三个工程。<br>
 大致目录:<br>
 Worksapce<br>
-|_common-utils<br>
-|_core<br>
-|_web<br>
+|-common-utils<br>
+|-core<br>
+|-web<br>
 
 
 ## 公共包
@@ -22,11 +22,11 @@ Worksapce<br>
 ### common-utils
 全系统（包括其它模块）公用的部分:<br>
 common-utils<br>
-|_exception<br>
-|_utils<br>
-|_Generic<br>
---|_GenericDao<br>
---|_GenericService<br>
+|-exception<br>
+|_-tils<br>
+|-Generic<br>
+	|-GenericDao<br>
+	|-GenericService<br>
 
 
 * 异常处理
@@ -60,11 +60,11 @@ common-utils<br>
 具体模块的核心工程:<br>
 core<br>
 |_commons<br>
---|_utils<br>
---|_comstatic<br>
---|_config<br>
+--|-utils<br>
+--|-comstatic<br>
+--|-config<br>
 |_Module_1<br>
---|_Dao<br>
+--|-Dao<br>
 --|_Domain<br>
 --|_Service<br>
 |_Module_2<br>
