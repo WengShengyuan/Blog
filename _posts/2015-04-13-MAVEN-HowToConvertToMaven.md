@@ -6,6 +6,7 @@ comments: false
 
 
 本文内容出自 <a href = "http://www.cnblogs.com/rushoooooo/p/3558499.html">Java工程转换为Maven工程</a>
+用于<a href = "http://github.com/WengShengyuan/CustomUtils">CustomUtils</a>项目的转换
 
 ## 创建一个JAVA工程
 创建一个Java工程。
