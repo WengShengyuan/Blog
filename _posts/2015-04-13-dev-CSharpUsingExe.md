@@ -5,7 +5,7 @@ comments: true
 ---
 
 
-主要是前一段做客流预测的时候，发现不会写SVM，所以 想直接用<a href= "http://baike.baidu.com/view/598089.htm">LibSVM</a>来进行预测。因为LibSVM可以直接将运算结果生成文件，
+主要是前一段做客流预测的时候，发现不会写SVM，想直接用<a href= "http://baike.baidu.com/view/598089.htm">LibSVM</a>来进行预测。因为LibSVM可以直接将运算结果生成文件，
 所以打算通过C#调用EXE的形式进行调用，同时读取结果数据。
 
 # 核心方法
