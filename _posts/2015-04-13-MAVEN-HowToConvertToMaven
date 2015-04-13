@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JAVA 并发
+title: [MAVEN]如何将JAVA项目转为MAVEN项目
 comments: false
 ---
 
@@ -23,3 +23,10 @@ comments: false
   	</dependency>
 </dependencies>
 ```
+
+## 删除工程目录下多余文件
+* 打开这个工程的目录，删除除了src和pom.xml的所有文件。
+* 在src下建立main和test两个目录，然后在这两个目录下面分别建立java目录。在src/main下面建立resources目录。
+
+## 重新导入MAVEN工程
+在Eclipse中重新导入该工程，使用Maven -> Existing Maven Module的方式导入。
