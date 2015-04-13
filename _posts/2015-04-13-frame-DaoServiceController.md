@@ -143,9 +143,15 @@ web<br>
 
 * `Service`用于业务逻辑处理。<strong>注意接口输入输出的规范</strong>，这样有利于接口复用。
 
-*`Dao`用于直接与数据实体交互，实现数据的简单提取与处理。<strong>避免在`Dao`层出现跨表操作现象</strong>.
+* `Dao`用于直接与数据实体交互，实现数据的简单提取与处理。<strong>避免在`Dao`层出现跨表操作现象</strong>.
 
 ## 结构
+
+结构示意图如下：<br>
+<img src = "{{site.baseurl}}/images/post_images/2015-04-13-frame-DaoServiceController/frame.jpg" /><br>
+
+
+
 
 # 异常处理
 
