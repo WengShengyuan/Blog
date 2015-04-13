@@ -17,7 +17,7 @@ Worksapce<br>
  |-web<br>
 
 
-## 公共包
+## 公共包 
 
 ### common-utils
 全系统（包括其它模块）公用的部分:<br>
@@ -54,7 +54,7 @@ common-utils<br>
 		所有项目的业务实现。
 </p>
 
-## 项目工程
+## 核心
 
 ### core
 具体模块的核心工程:<br>
@@ -102,6 +102,7 @@ core<br>
 </p>
 
 
+## 前端
 
 ### web
 前端工程:<br>
@@ -131,10 +132,6 @@ web<br>
 	一般`resource`可以放置`images`,`css`,`javascript`等文件。`WEB-INF`中放置`html`文件。
 </p>
 
-## 包的命名规范
-
-* com.公司名.项目名.模块名
-
 # Controller - Service - Dao 的三层结构
 
 ## 阐述
@@ -150,12 +147,61 @@ web<br>
 结构示意图如下：<br>
 <img src = "{{site.baseurl}}/images/post_images/2015-04-13-frame-DaoServiceController/frame.jpg" /><br>
 
+* 一般`Controller`只与`Service`交互。 `Service`只与`Dao`交互。
 
 
 
 # 异常处理
 
+## 抛出
+
+* Controller-Service-Dao 三层架构
+<p>
+	* `Dao` 中不涉及业务，一般错误都是系统异常，不做处理，直接抛出`Exception`， 在`Service`中做进一步处理。
+	
+	```java
+		public void doSomething() throws Exception{
+			try{
+				someFunction();
+			} catch(Exception e){
+				throw e;
+			}
+	
+	}
+	```
+	
+	* `Service` 中涉及复杂业务，一般错误处理在这里处理完成后抛出。
+	
+	```java
+		public void doSomething() throws Exception{
+			
+			logger.debug();
+			
+			try{
+				someFunction();
+				
+				if(BusinessError){
+					logger.info();
+					throw new BusinessException();
+				}
+				
+			} catch (Exception e){
+				logger.error();
+				throw new SystemException();
+			}
+			
+		}
+	```
+	
+</p>
+
+## 捕获
+
 # 日志系统
 
-# 系统参数设置
+## 不同级别的日志
+
+## 可配置的统一调度
+
+## 埋点
 
