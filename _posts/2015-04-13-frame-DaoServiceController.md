@@ -118,7 +118,7 @@ web<br>
 <p>
 用来控制页面跳转<br>
 	1) 返回页面与数据 `ModelAndView`。<br>
-	使用 'RequestMapping` 标签。<br>
+	使用 `RequestMapping` 标签。<br>
 	2) 返回数据实体<br>
 	使用 `ResponseBody`+`RequestMapping` 标签。<br>
 	一般Mapping时候在路径上加上`/api/`比较好。这样有利于明显标志数据与页面的分离。 <br>
