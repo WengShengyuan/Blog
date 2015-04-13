@@ -16,7 +16,6 @@ comments: false
 ## 配置pom.xml文件
 加入自己的依赖包
 
-```xml
 <dependencies>
   	<dependency>
   		<groupId>net.lingala.zip4j</groupId>
@@ -24,7 +23,6 @@ comments: false
   		<version>1.3.1</version>
   	</dependency>
 </dependencies>
-```
 
 ## 删除工程目录下多余文件
 * 打开这个工程的目录，删除除了src和pom.xml的所有文件。
