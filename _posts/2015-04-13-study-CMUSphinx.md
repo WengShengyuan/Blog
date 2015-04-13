@@ -26,16 +26,16 @@ comments: true
 
 //dependency
 
-dependency>
-  <groupId>edu.cmu.sphinx</groupId>
-  <artifactId>sphinx4-core</artifactId>
-  <version>1.0-SNAPSHOT</version>
+<dependency>
+	<groupId>edu.cmu.sphinx</groupId>
+	<artifactId>sphinx4-core</artifactId>
+	<version>1.0-SNAPSHOT</version>
 </dependency>
 
 <dependency>
-  <groupId>edu.cmu.sphinx</groupId>
-  <artifactId>sphinx4-data</artifactId>
-  <version>1.0-SNAPSHOT</version>
+	<groupId>edu.cmu.sphinx</groupId>
+	<artifactId>sphinx4-data</artifactId>
+	<version>1.0-SNAPSHOT</version>
 </dependency>
 
 ```
