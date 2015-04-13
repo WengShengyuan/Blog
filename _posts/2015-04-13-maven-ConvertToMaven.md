@@ -1,7 +1,7 @@
 ---
-layout: default_nocomments
+layout: default_comments
 title: 如何将JAVA工程转为MAVEN工程
-comments: false
+comments: true
 ---
 
 
