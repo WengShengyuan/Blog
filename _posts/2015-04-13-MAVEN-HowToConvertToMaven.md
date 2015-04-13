@@ -15,7 +15,8 @@ comments: false
 
 ## 配置pom.xml文件
 加入自己的依赖包
-```java
+
+```xml
 <dependencies>
   	<dependency>
   		<groupId>net.lingala.zip4j</groupId>
