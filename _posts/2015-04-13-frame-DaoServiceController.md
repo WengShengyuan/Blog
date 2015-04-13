@@ -88,7 +88,7 @@ core<br>
 <p>
 	在`common-utils`的`GenericDao`基础上添加个性化的方法。<br>
 	比如：<br>
-	清空整张表、从JSON文件导入数据等。<br>
+	清空整张表、从JSON文件导入数据、针对该表个性化数据查询、处理等。<br>
 		
 	1) 接口 `Dao`<br>
 		针对某个表`Entity`实现对其数据基本的处理。<br>
