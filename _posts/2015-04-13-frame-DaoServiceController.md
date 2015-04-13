@@ -122,7 +122,7 @@ web<br>
 	2) 返回数据实体<br>
 	使用 `ResponseBody`+`RequestMapping` 标签。<br>
 	一般Mapping时候在路径上加上`/api/`比较好。这样有利于明显标志数据与页面的分离。 <br>
-	* 3) 在`Controller`上方也可以加入统一的`Mapping`路径，这样可以用于在有用户认证拦截的框架中(如:`Shiro`)实现统一的免密连接。多用于`api`或者后台调试页面。 
+	*3) 在`Controller`上方也可以加入统一的`Mapping`路径，这样可以用于在有用户认证拦截的框架中(如:`Shiro`)实现统一的免密连接。多用于`api`或者后台调试页面。 
 </p>
 
 * 资源 `webapp`
