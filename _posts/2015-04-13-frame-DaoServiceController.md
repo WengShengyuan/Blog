@@ -1,11 +1,11 @@
 ---
 layout: default_nocomments
-title: 个人参与SpringMVC框架项目的心得
+title: 个人使用SpringMVC框架项目的心得
 comments: false
 ---
 
 
-框架不是我搭的 T.T
+框架不是我搭的 T.T，我只是用了这个框架在开发，这个得向大神学习一下。
 
 # 项目结构
 
