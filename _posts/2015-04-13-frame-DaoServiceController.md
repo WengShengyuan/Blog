@@ -5,7 +5,7 @@ comments: false
 ---
 
 
-框架不是我搭的 T.T，我只是用了这个框架在开发，这个得向大神学习一下。
+首先SpringMVC框架不是我搭的 T.T，我只是用了这个框架在开发，同时在开发过程中总结了写小经验分享分享。
 
 # 项目结构
 
@@ -86,6 +86,10 @@ core<br>
 
 * 数据层 `Dao` Extends `GenericDao`
 <p>
+	在`common-utils`的`GenericDao`基础上添加个性化的方法。<br>
+	比如：<br>
+	清空整张表、从JSON文件导入数据等。<br>
+		
 	1) 接口 `Dao`<br>
 		针对某个表`Entity`实现对其数据基本的处理。<br>
 	2) 实现 `DaoImpl`<br>
