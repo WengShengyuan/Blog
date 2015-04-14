@@ -15,6 +15,16 @@
     <![endif]-->
   </head>
   <body>
+  
+   		<aside id="left-side">
+        	{% include categories.ext %}
+      	</aside>
+
+      	<aside id="right-side">
+        	{% include archives.ext %}
+      	</aside>
+      
+  
     <div class="wrapper">
       <header>
       
@@ -33,14 +43,7 @@
         </ul>
       </header>
       
-      <aside id="left-side">
-        	{% include categories.ext %}
-      	</aside>
-
-      	<aside id="right-side">
-        	{% include archives.ext %}
-      	</aside>
-      
+     
       <section>
         <h1>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }} 
