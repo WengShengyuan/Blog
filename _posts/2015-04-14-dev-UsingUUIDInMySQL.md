@@ -146,3 +146,17 @@ total_rows           chunk_size           time_taken
 ```
 
 可以看出性能有了极大的提升。
+
+## JPA中的具体表实体设置
+
+参考文章<a href="http://www.importnew.com/12567.html">Hibernate和UUID标示符</a>
+
+该方法缺陷在于：主键数据在数据库管理工具中显示为乱码。
+
+```java
+
+ 	@Id
+    @Column(columnDefinition = "BINARY(16)")
+    private UUID uuid;
+
+```
