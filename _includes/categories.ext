@@ -3,11 +3,11 @@
       {% for cat in site.categories %}
             {% if cat[0] != page.category %}
                 <li>
-                <a href="{{ site.baseurl }}/categories/{{ cat[0] }}"> {{ cat[0] }} ({{ cat | last | size}}) </a>
+                <a href="{{ site.baseurl }}/categories/index.html?cat={{ cat[0] }}"> {{ cat[0] }} ({{ cat | last | size}}) </a>
                 </li>
             {% else %}
                 <li style="background-color: #444">
-                <a href="{{ site.baseurl }}/categories/{{ cat[0] }}"> {{ cat[0] }} ({{ cat | last | size}}) </a>
+                <a href="{{ site.baseurl }}/categories/index.html?cat={{ cat[0] }}"> {{ cat[0] }} ({{ cat | last | size}}) </a>
                 </li>
             {% endif %}
       {% endfor %}
