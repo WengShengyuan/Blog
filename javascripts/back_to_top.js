@@ -1,6 +1,9 @@
 
 
 	$(document).ready(function() {
+		
+		console.log('一個人寂寞的調試信息');
+		
 		$("#back-top").hide();
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 100) {
