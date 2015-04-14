@@ -176,7 +176,8 @@ category: javascript
 
 ### ajax
 
-<a href="http://www.w3school.com.cn/jquery/ajax_ajax.asp">W3School教程<a>
+<a href="http://www.w3school.com.cn/jquery/ajax_ajax.asp">W3School教程<a><br>
+
 
 * jquery 比较防弊[待补充]
 
