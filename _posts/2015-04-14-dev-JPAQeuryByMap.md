@@ -6,7 +6,7 @@ category: JPA
 ---
 
 
-# 通过拼接HQL语句的形式实现，使用`StringBuilder`。
+## 通过拼接HQL语句的形式实现，使用`StringBuilder`。
 
 * 模式1
 
@@ -97,6 +97,25 @@ JAVA实现
 			return resultList;
 
 	}
+
+```
+
+## 实际使用
+
+```java
+
+	HashMap<String, Object> map = new HashMap<String, Object>();
+	map.put("key1", valueObj);
+	map.put("key2", valueObj);
+	List<Entity> results = entityDao.queryByStringEqualMap(map);
+	
+	
+	HashMap<String, List<Object>> map = new HashMap<String, List<Object>>();
+	List<Object> values = new ArrayList<Object>();
+	values.add(valueObj1);
+	values.add(valueObj2);
+	map.put("key1", values);
+	List<Entity> results = entityDao.queryByStringInMap(map);
 
 ```
 
