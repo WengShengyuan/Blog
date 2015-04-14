@@ -78,8 +78,6 @@ category: javascript
 
 * 调用jquery 的 $.cookie
 
-1 - 引入jquery.cookie.js<br>
-
 使用方式如下：<br>
 
 首先引入jquery.cookie.js
