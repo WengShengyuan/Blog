@@ -5,8 +5,8 @@ title: 目录
 
 <div >
 {% for category in site.categories %}
-<h2>{{ category | first }}</h2>
-</span style="display:none;">{{ category | last | size }}</span>
+<h3>{{ category | first }}</h3>
+
 <ul class="arc-list">
     {% for post in category.last %}
         <li>
