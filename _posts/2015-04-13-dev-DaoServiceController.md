@@ -253,8 +253,26 @@ web<br>
 
 * 通过`config`在外部实现日志级别的处理
 
-设置日志级别	<strong>DEBUG(0) < INFO(1) < ERROR(2)<br></strong>
-则当设置`logLevel = 0 `时，会记录所有日志； 当`logLevel = 2`时，就只会记录系统错误日志了。
+设置日志级别	<strong>DEBUG(3) > INFO(2) > ERROR(1) > NONE(0)<br></strong>
+则当设置`logLevel = 3 `时，会记录所有日志； 当`logLevel = 1`时，就只会记录系统错误日志了。
+
+伪代码如下:
+
+```java
+
+	public void error(String className, String functionName, String logInfo) {
+		try {
+			if(onfig.getLOG_LEVEL() >= Static.LOG_LEVEL_ERROR) {
+				if(config.isUSE_LOGGER()) {
+					logger.errorLog(className, functionName, logInfo);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+```
 
 * 最终效果如下
 <img src = "{{site.baseurl}}/images/post_images/2015-04-13-frame-DaoServiceController/logView.jpg" /><br>
