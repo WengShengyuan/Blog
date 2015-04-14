@@ -29,4 +29,8 @@ UUID.randomUUID().toString().replaceAll("-","");
 性能损失如图:
 <img src-"{{site.baseurl}}/images/post_images/2015-04-14-dev-UsingUUIDInMySQL/initial-per-transaction.jpg"/>
 
+数据来源<a href="http://kccoder.com/mysql/uuid-vs-int-insert-performance/">MySQL InnoDB Primary Key Choise</a><br>
+
 ## 提高MySQL中UUID查询性能的方法
+
+很多文章中都提到了将UUID以binary形式存储可以显著提高性能。
