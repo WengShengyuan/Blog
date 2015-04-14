@@ -3,6 +3,7 @@ layout: indexDefault
 title: 目录
 ---
 
+<div style = "display:none;">
 {% for category in site.categories %}
 <h2>{{ category | first }}</h2>
 </span>{{ category | last | size }}</span>
@@ -12,8 +13,10 @@ title: 目录
     {% endfor %}
 </ul>
 {% endfor %}
+</div>
 
-<ul class="post-list" style="display:none;">
+
+<ul class="post-list">
     {% for post in site.posts %}
         <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         {{ post.date | date: "%F" }} <br>
