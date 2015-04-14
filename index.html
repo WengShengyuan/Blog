@@ -18,7 +18,7 @@ title: 目录
 
 <ul class="post-list">
     {% for post in site.posts %}
-        {{ post.date | date: "%F" }} >  
+        {{ post.date | date_to_string }} >  
         <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
         <br>
     {% endfor %}
