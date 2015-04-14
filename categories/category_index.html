@@ -9,7 +9,7 @@ title: 标签目录
 		{% if cat[0] == page.category %}
 		    {% for post in site.posts %}
 		        {{ post.date | date_to_string }} >  
-		        <a href="{{site.baseurl}}{{post.url}}"> {{ page.baseurl }}  </a>
+		        <a href="{{site.baseurl}}{{post.url}}"> {{ post.category }}  </a>
 		        <br>
 		    {% endfor %}
 		{% endif %}
