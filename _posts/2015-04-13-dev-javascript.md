@@ -1,5 +1,5 @@
 ---
-layout: default_comments
+layout: default
 title: javascript以及衍生框架自学笔记
 comments: true
 category: javascript

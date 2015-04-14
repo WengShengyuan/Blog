@@ -1,5 +1,5 @@
 ---
-layout: default_comments
+layout: default
 title: 关于CMUSphinx的一些整理
 comments: true
 category: 语音识别
