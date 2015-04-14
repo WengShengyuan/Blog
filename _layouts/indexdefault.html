@@ -32,17 +32,6 @@
           <li><a href="https://github.com/{{site.username}}/Blog/tree/gh-pages">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
-      <section>
-        <h1>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }} 
-        </h1>
-        
-        
-        
-			{{ content }}
-
-      
-      </section>
       
       <aside id="left-side">
         	{% include categories.ext %}
@@ -51,6 +40,13 @@
       	<aside id="right-side">
         	{% include archives.ext %}
       	</aside>
+      
+      <section>
+        <h1>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }} 
+        </h1>
+			{{ content }}
+      </section>
       
       <section class="comments">
         {% if page.comments %}
