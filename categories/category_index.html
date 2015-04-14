@@ -4,6 +4,7 @@ title: 标签目录
 ---
 
 {% for category in site.categories %}
+<div id = "{{ category | first }}">
 <h3>{{ category | first }}</h3>
 <ul class="arc-list">
     {% for post in category.last %}
@@ -12,6 +13,7 @@ title: 标签目录
         <br></li>
     {% endfor %}
 </ul>
+</div>
 {% endfor %}
 
 
