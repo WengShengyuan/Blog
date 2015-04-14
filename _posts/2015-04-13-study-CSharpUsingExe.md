@@ -2,6 +2,7 @@
 layout: default_comments
 title: C#调用外部EXE-LibSVM为例
 comments: true
+category: C#
 ---
 
 
