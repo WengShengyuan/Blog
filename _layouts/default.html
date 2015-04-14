@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
     <script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    
+    <style>
+    
+    #back-top {
+  position: fixed;
+  bottom: 30px;
+  margin-left: 1040px;
+}
+#back-top a {
+  width: 54px;
+  height: 54px;
+  display: block;
+  background: #ddd url(../img/bgs/bg_up_arrow.png) no-repeat center center;
+  background-color: #aaa;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+#back-top a:hover {
+  background-color: #777;
+}
+    
+    </style>
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -49,6 +76,33 @@
         {% endif %}
       </section>
     </div>
+    
+    <script>
+    
+    $("#back-top").hide();
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#back-top').fadeIn();
+        } else {
+          $('#back-top').fadeOut();
+        }
+      });
+      $('#back-top a').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    });
+    
+    </script>
+    
+    
+    <div id="back-top">
+ 		<a href="#top" title="回到顶部"></a>
+	</div>
+    
     <footer>
       <p>项目维护 by <a href="https://github.com/{{site.username}}">{{site.username}}</a></p>
       <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
