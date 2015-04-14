@@ -1,0 +1,13 @@
+---
+layout: categories
+title: 标签目录
+---
+
+
+<ul class="post-list">
+    {% for post in site.posts %}
+        {{ post.date | date_to_string }} >  
+        <a href="{{site.baseurl}}{{post.url}}"> {{ post.title }}  </a>
+        <br>
+    {% endfor %}
+</ul>

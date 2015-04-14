@@ -1,17 +1,14 @@
 <!doctype html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ site.title }}</title>
+    <title>{{site.title}}</title>
 
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/back_to_top.css">
     <script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
     <script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
-	<script src="{{site.baseurl}}/javascripts/gen_categories.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
 
@@ -20,12 +17,49 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+  <body>
+    <div class="wrapper">
+      <header>
+      
+      <h1>
+      	<a href="http://{{site.username}}.github.io/Blog/">
+      	<span><img src = "{{site.baseurl}}/images/Avatar.png" /></span>
+        	{{site.title}}
+        </a>
+      </h1>
+        <p>
+        	欢迎来到{{site.title}}的迷你博客! :)
+        </p>
+        <p class="view"><a href="https://github.com/{{site.username}}/Blog">View the Project on GitHub <small>{{site.username}}/Blog</small></a></p>
+        <ul>
+          <li><a href="https://github.com/{{site.username}}/Blog/tree/gh-pages">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }} 
+        </h1>
+        
+        
+			{{ content }}
 
-<body>
+      
+      </section>
+      
+      <section class="comments">
+        {% if page.comments %}
+          {% include comments.ext %}
+        {% endif %}
+      </section>
+    </div>
+    
 
-	{{ content }}
-
-</body>
-
-
+    
+    <footer>
+      <p>项目维护 by <a href="https://github.com/{{site.username}}">{{site.username}}</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
 </html>
