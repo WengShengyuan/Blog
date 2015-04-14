@@ -256,6 +256,10 @@ web<br>
 设置日志级别	<strong>DEBUG(0) < INFO(1) < ERROR(2)<br></strong>
 则当设置`logLevel = 0 `时，会记录所有日志； 当`logLevel = 2`时，就只会记录系统错误日志了。
 
+* 最终效果如下
+<img src = "{{site.baseurl}}/images/post_images/2015-04-13-frame-DaoServiceController/logView.jpg" /><br>
+
+
 
 
 
