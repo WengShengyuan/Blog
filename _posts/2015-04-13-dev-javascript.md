@@ -76,7 +76,21 @@ category: javascript
 
 ### 操作cookie
 
-* 调用jquery 的 $.cookie 待补充
+* 调用jquery 的 $.cookie
+
+1 - 引入jquery.cookie.js<br>
+
+使用效果如下：<br>
+
+```javascript
+
+	//读取
+	var value = $.cookie('key');
+	
+	//写入
+	$.cookie('key', 'value', { expires: 7, path: '/' });
+
+```
 
 * 直接实现
 
@@ -125,6 +139,10 @@ category: javascript
 	
 
 ```
+
+### cookie 读取与保存 Object
+
+* 带完善
 
 ### 搜索DOM
 
