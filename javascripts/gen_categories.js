@@ -1,6 +1,7 @@
 
 	$(document).ready(function() {
 		var cat = getQueryString("cat");
+		console.log('cate:':cat);
 		$("#"+cat).css('display','block'); 
 	});
 	
