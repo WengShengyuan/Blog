@@ -1,0 +1,15 @@
+#left-side {
+	position:fixed;
+	margin-left: 20%;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#right-side {
+	position:fixed;
+	margin-left: 90%;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}

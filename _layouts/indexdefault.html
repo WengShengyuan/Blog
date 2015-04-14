@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/styles.css">
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/side.css">
     <script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -15,22 +16,12 @@
     <![endif]-->
   </head>
   <body>
-  		<div style="position:fixed;margin-left: 20%;background: #ddd url(../images/bg_up_arrow.png) no-repeat center center;
-	background-color: #aaa;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-	-webkit-transition: 1s;
-	-moz-transition: 1s;">
    		<aside id="left-side">
         	{% include categories.ext %}
       	</aside>
-      	</div>
-		<div style="display:none;">
       	<aside id="right-side">
         	{% include archives.ext %}
       	</aside>
-      	</div>
   
     <div class="wrapper">
       <header>
