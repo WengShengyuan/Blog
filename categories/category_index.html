@@ -9,7 +9,7 @@ title: 标签目录
 		{% if cat[0] == page.category %}
 		    {% for post in site.posts %}
 		        {{ post.date | date_to_string }} >  
-		        <a href="{{site.baseurl}}{{post.url}}"> {{ post.category }}  </a>
+		        <a href="{{site.baseurl}}{{post.url}}"> {{ post.category }} 1111 </a>
 		        <br>
 		    {% endfor %}
 		{% endif %}
@@ -17,16 +17,3 @@ title: 标签目录
 </ul>
 
 
-  <ul class="category-list">
-      {% for cat in site.categories %}
-            {% if cat[0] != page.category %}
-                <li>
-                <a href="{{ site.baseurl }}/categories/index.html?cat={{ cat[0] }}"> {{ cat[0] }} ({{ cat | last | size}}) </a>
-                </li>
-            {% else %}
-                <li style="background-color: #444">
-                <a href="{{ site.baseurl }}/categories/index.html?cat={{ cat[0] }}"> {{ cat[0] }} ({{ cat | last | size}}) </a>
-                </li>
-            {% endif %}
-      {% endfor %}
-  </ul>
