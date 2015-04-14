@@ -4,3 +4,4 @@ markdown: redcarpet
 safe: false
 pygments: true
 title: 嗡汤圆
+gems: [gen_archives, gen_categories]
