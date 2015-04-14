@@ -222,8 +222,9 @@ category: javascript
 
 ## 可视化构建
 
-页面框架构建臂jquery-mobile方便。有可视化构建工具<br>
-<a href="http://www.layoutit.com/">layoutIt!</a>
+页面框架构建比jquery-mobile方便。有可视化构建工具，其一大优点即默认生成的就是带自适应的HTML页面。可以轻松实现跨设备浏览。<br>
+<a href="http://www.layoutit.com/">layoutIt!</a><br>
+可以快速构建页面框架，然后在其基础上进行补充与修改。
 
 # 提高javascript性能的技巧
 
