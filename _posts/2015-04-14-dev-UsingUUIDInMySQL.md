@@ -151,7 +151,7 @@ total_rows           chunk_size           time_taken
 
 参考文章<a href="http://www.importnew.com/12567.html">Hibernate和UUID标示符</a>
 
-该方法缺陷在于：主键数据在数据库管理工具中显示为乱码。
+该方法缺陷在于：主键数据在数据库管理工具中显示为乱码。<br>
 
 ```java
 
