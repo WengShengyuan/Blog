@@ -4,6 +4,7 @@
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
+	text-shadow:  2px 2px 5px #000;
 }
 
 #right-side {
@@ -12,4 +13,5 @@
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
+	text-shadow:  2px 2px 5px #000;
 }
