@@ -37,6 +37,8 @@ UUID.randomUUID().toString().replaceAll("-","");
 如 <a href="http://iops.io/blog/storing-billions-uuid-fields-mysql-innodb/">storing-billions-uuid-fields-mysql-innodb</a>
 这篇博文就有详细性能对比:<br>
 
+```java
+
 Store UUID in hex format as CHAR(36).
 INSERT PERFORMANCE
 --------------------------------------------------------
@@ -61,3 +63,5 @@ total_rows           chunk_size           time_taken
 1800000              100000               31.5416200161
 1900000              100000               35.4671728611
 2000000              100000               41.4726109505
+
+```
