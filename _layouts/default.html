@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/pygment_trac.css">
     <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/back_to_top.css">
     <script src="{{site.baseurl}}/javascripts/scale.fix.js"></script>
+    <script src="{{site.baseurl}}/javascripts/back_to_top.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
 
@@ -53,26 +54,7 @@
       </section>
     </div>
     
-    <script>
     
-    $("#back-top").hide();
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-          $('#back-top').fadeIn();
-        } else {
-          $('#back-top').fadeOut();
-        }
-      });
-      $('#back-top a').click(function () {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 800);
-        return false;
-      });
-    });
-    
-    </script>
     
     
     <div id="back-top">
