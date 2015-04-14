@@ -4,7 +4,7 @@ title: 标签目录
 ---
 
 {% for category in site.categories %}
-<div id = "{{ category | first }}">
+<div id = "{{ category | first }}" style="display:none;">
 <h3>{{ category | first }}</h3>
 <ul class="arc-list">
     {% for post in category.last %}

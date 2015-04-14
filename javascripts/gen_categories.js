@@ -1,7 +1,7 @@
 
 	$(document).ready(function() {
 		var cat = getQueryString("cat");
-		alert(cat);
+		$("#"+cat).css('display','block'); 
 	});
 	
 	function getQueryString(name) {
