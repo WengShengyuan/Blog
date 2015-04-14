@@ -37,18 +37,20 @@
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a> {{ page.title }} 
         </h1>
         
-        <aside id="active">
+        
+        
+			{{ content }}
+
+      
+      </section>
+      
+      <aside id="left-side">
         	{% include categories.ext %}
       	</aside>
 
       	<aside id="right-side">
         	{% include archives.ext %}
       	</aside>
-        
-			{{ content }}
-
-      
-      </section>
       
       <section class="comments">
         {% if page.comments %}
