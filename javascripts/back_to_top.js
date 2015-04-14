@@ -1,4 +1,5 @@
 $(document).ready(function(){ 
+	alert('11');
 	$("#back-top").hide();
 	$(document).ready(function() {
 		$(window).scroll(function() {
