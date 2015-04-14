@@ -80,7 +80,17 @@ category: javascript
 
 1 - 引入jquery.cookie.js<br>
 
-使用效果如下：<br>
+使用方式如下：<br>
+
+首先引入jquery.cookie.js
+
+```HTML
+
+<script src = "../js/jquery.cookie.js"></script>
+
+```
+
+在`javascript`中使用
 
 ```javascript
 
