@@ -5,7 +5,9 @@ title: 目录
 
 <div >
 {% for category in site.categories %}
-<h3>{{ category | first }}</h3>
+<h3>
+	{{ category | first }}
+</h3>
 
 <ul class="arc-list">
     {% for post in category.last %}
