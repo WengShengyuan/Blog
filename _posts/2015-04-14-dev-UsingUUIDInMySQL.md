@@ -25,9 +25,11 @@ UUID.randomUUID().toString().replaceAll("-","");
 
 ## UUID的性能问题
 
-由于MySQL的InnoDB类型表在插入数据的时候进行了逐渐排序。因此对于随机UUID在数据量大的时候会出现性能下降的情况。<br>
+由于MySQL的InnoDB类型表在插入数据的时候进行了逐渐排序。因此对于随机UUID在数据量大的时候会出现性能下降的情况
+
 性能损失如图:
-<img src = "{{site.baseurl}}/images/post_images/2015-04-14-dev-UsingUUIDInMySQL/initial-per-transaction.jpg"/>
+
+![]({{site.baseurl}}/images/post_images/2015-04-14-dev-UsingUUIDInMySQL/initial-per-transaction.jpg)
 
 数据来源<a href="http://kccoder.com/mysql/uuid-vs-int-insert-performance/">MySQL InnoDB Primary Key Choise</a><br>
 
