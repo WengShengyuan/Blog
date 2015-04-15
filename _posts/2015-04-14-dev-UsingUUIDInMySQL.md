@@ -36,9 +36,11 @@ UUID.randomUUID().toString().replaceAll("-","");
 
 ## 提高MySQL中UUID查询性能的方法
 
-很多文章中都提到了将UUID以binary形式存储可以显著提高性能。<br>
-如 <a href="http://iops.io/blog/storing-billions-uuid-fields-mysql-innodb/">storing-billions-uuid-fields-mysql-innodb</a>
-这篇博文就有详细性能对比:<br>
+很多文章中都提到了将UUID以binary形式存储可以显著提高性能。
+
+如 [storing-billions-uuid-fields-mysql-innodb](http://iops.io/blog/storing-billions-uuid-fields-mysql-innodb/)
+
+这篇博文就有详细性能对比:
 
 * UUID - CHAR(36)
 
@@ -152,7 +154,7 @@ total_rows           chunk_size           time_taken
 
 ## JPA中的具体表实体设置
 
-参考文章<a href="http://www.importnew.com/12567.html">Hibernate和UUID标示符</a>
+参考文章[Hibernate和UUID标示符](http://www.importnew.com/12567.html)
 
 该方法缺陷在于：主键数据在数据库管理工具中显示为乱码。<br>
 
