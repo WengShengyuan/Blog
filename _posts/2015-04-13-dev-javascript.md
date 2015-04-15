@@ -226,9 +226,6 @@ category: javascript
 <a href="http://www.layoutit.com/">layoutIt!</a><br>
 可以快速构建页面框架，然后在其基础上进行补充与修改。
 
-# 提高javascript性能的技巧
-
-## 待补充
 
 
 
