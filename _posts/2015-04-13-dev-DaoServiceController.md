@@ -32,11 +32,13 @@ common-utils<br>
 
 * 异常处理
 <p>
-	根据业务逻辑分成：系统异常`SystemException`、业务异常`BusinessException`两大类。<br>
-	1) 业务异常<br>
+	根据业务逻辑分成：系统异常`SystemException`、业务异常`BusinessException`两大类。
+	
+	1。 业务异常
 		通常指业务处理中可能出现的异常情况，通常是违反业务正常进行规则出现的异常，而不是系统错误。应该给前台反馈适当的异常信息。而不是单纯的错误代码。
-		且一般是业务逻辑判断后主动抛出的异常，而不是程序错误抛出的异常。<br>
-	2) 系统异常<br>
+		且一般是业务逻辑判断后主动抛出的异常，而不是程序错误抛出的异常。
+
+	2。 系统异常
 		一般是程序错误，或者违规操作造成程序无法继续运行的状况。为了提高用户体验，通常捕捉到程序异常`Exception`后记录日志系统，
 		然后将其包装成系统异常`BusinessException`抛给前台。这样反馈给用户的时异常的概述，而不是冗长的异常代码。同时也不影响查询日志获得更详细的错误信息。
 </p>
@@ -49,16 +51,22 @@ common-utils<br>
 
 * 公共接口
 <p>
-	1) 数据层 `GenericDao`, `GenericDaoImpl`<br>
+	1。 数据层 `GenericDao`, `GenericDaoImpl`
+	
 		所有项目的公共实现，如：增、删、改、查...。
-	2) 服务层 `GenericService`, `GenericServiceImpl`<br>
+		
+	2。 服务层 `GenericService`, `GenericServiceImpl
+
 		所有项目的业务实现。
+		
 </p>
 
 ## 核心
 
 ### core
-具体模块的核心工程:<br>
+
+具体模块的核心工程:
+
 core<br>
  |-commons<br>
  &nbsp;&nbsp;|-utils<br>
@@ -76,25 +84,37 @@ core<br>
 
 * 公共库
 <p>
-	包括工具库、静态参数类、配置类<br>
-	1) 工具库<br>
-		可以从网络上获取：引入MAVEN依赖，或者导入java。并可以适当的进行继承与扩展。对于提高编程效率很有帮助。<br>
-	2) 静态参数类<br>
-		避免在代码中直接写入参数，而是将参数提取出来放进参数类中。<br>
-	3) 配置类`config`<br>
+	包括工具库、静态参数类、配置类
+
+	1. 工具库
+
+		可以从网络上获取：引入MAVEN依赖，或者导入java。并可以适当的进行继承与扩展。对于提高编程效率很有帮助。
+
+	2. 静态参数类
+
+		避免在代码中直接写入参数，而是将参数提取出来放进参数类中。
+		
+	3. 配置类`config`
+
 		将一些允许在项目发布后进行设置的参数暴露出来，以`.property`或者`.xml`方式保存。
 </p>
 
 * 数据层 `Dao` Extends `GenericDao`
+
 <p>
-	在`common-utils`的`GenericDao`基础上添加个性化的方法。<br>
-	比如：<br>
-	清空整张表、从JSON文件导入数据、针对该表个性化数据查询、处理等。<br>
+	在`common-utils`的`GenericDao`基础上添加个性化的方法。
+
+	比如：
+
+	清空整张表、从JSON文件导入数据、针对该表个性化数据查询、处理等。
+
 		
-	1) 接口 `Dao`<br>
-		针对某个表`Entity`实现对其数据基本的处理。<br>
-	2) 实现 `DaoImpl`<br>
+	1. 接口 `Dao`<br>
 		针对某个表`Entity`实现对其数据基本的处理。
+
+	2. 实现 `DaoImpl`<br>
+		针对某个表`Entity`实现对其数据基本的处理。
+		
 </p>
 
 * 业务逻辑层 `Service` Extends `GenericService`
@@ -122,13 +142,20 @@ web<br>
 
 * 控制器 `Controller`
 <p>
-用来控制页面跳转<br>
-	1) 返回页面与数据 `ModelAndView`。<br>
-	使用 `RequestMapping` 标签。<br>
-	2) 返回数据实体<br>
-	使用 `ResponseBody`+`RequestMapping` 标签。<br>
-	一般Mapping时候在路径上加上`/api/`比较好。这样有利于明显标志数据与页面的分离。 <br>
-	*3) 在`Controller`上方也可以加入统一的`Mapping`路径，这样可以用于在有用户认证拦截的框架中(如:`Shiro`)实现统一的免密连接。多用于`api`或者后台调试页面。 
+用来控制页面跳转
+
+	1. 返回页面与数据 `ModelAndView`。
+
+	使用 `RequestMapping` 标签。
+
+	2. 返回数据实体
+
+	使用 `ResponseBody`+`RequestMapping` 标签。
+
+	一般Mapping时候在路径上加上`/api/`比较好。这样有利于明显标志数据与页面的分离。
+
+	3. 在`Controller`上方也可以加入统一的`Mapping`路径，这样可以用于在有用户认证拦截的框架中(如:`Shiro`)实现统一的免密连接。多用于`api`或者后台调试页面。 
+	
 </p>
 
 * 资源 `webapp`
