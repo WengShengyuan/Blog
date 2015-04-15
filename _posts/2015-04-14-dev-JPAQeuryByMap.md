@@ -2,7 +2,7 @@
 layout: default
 title: hibernate中的通用<K,V>查询法
 comments: true
-category: JPA
+category: database
 ---
 
 
