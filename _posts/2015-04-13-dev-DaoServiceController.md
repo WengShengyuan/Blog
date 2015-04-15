@@ -31,7 +31,8 @@ common-utils<br>
 
 
 * 异常处理
-<p>
+
+
 	根据业务逻辑分成：系统异常`SystemException`、业务异常`BusinessException`两大类。
 	
 	1. 业务异常
@@ -41,16 +42,16 @@ common-utils<br>
 	2. 系统异常
 		一般是程序错误，或者违规操作造成程序无法继续运行的状况。为了提高用户体验，通常捕捉到程序异常`Exception`后记录日志系统，
 		然后将其包装成系统异常`BusinessException`抛给前台。这样反馈给用户的时异常的概述，而不是冗长的异常代码。同时也不影响查询日志获得更详细的错误信息。
-</p>
+
 
 
 * 工具库
-<p>
+
 	可以从网络上获取：引入MAVEN依赖，或者导入java。并可以适当的进行继承与扩展。对于提高编程效率很有帮助。尽量用T、E等，扩大适用范围。
-</p>
+
 
 * 公共接口
-<p>
+
 	1。 数据层 `GenericDao`, `GenericDaoImpl`
 	
 		所有项目的公共实现，如：增、删、改、查...。
@@ -59,7 +60,7 @@ common-utils<br>
 
 		所有项目的业务实现。
 		
-</p>
+
 
 ## 核心
 
@@ -83,7 +84,7 @@ core<br>
  。。。。<br>
 
 * 公共库
-<p>
+
 	包括工具库、静态参数类、配置类
 
 	1. 工具库
@@ -97,11 +98,12 @@ core<br>
 	3. 配置类`config`
 
 		将一些允许在项目发布后进行设置的参数暴露出来，以`.property`或者`.xml`方式保存。
-</p>
+
+
 
 * 数据层 `Dao` Extends `GenericDao`
 
-<p>
+
 	在`common-utils`的`GenericDao`基础上添加个性化的方法。
 
 	比如：
@@ -114,11 +116,11 @@ core<br>
 
 	2. 实现 `DaoImpl`<br>
 		针对某个表`Entity`实现对其数据基本的处理。
-		
-</p>
+
 
 * 业务逻辑层 `Service` Extends `GenericService`
-<p>
+
+
 	1. 接口 `Service`
 
 	针对某一项业务的接口，可能涉及多个表Entity，因此在Service层可以调用多个Dao。
@@ -129,7 +131,7 @@ core<br>
 	
 	<strong>为实现数据库的事务处理，在`Service`的实现上，应加上事务标签`@Transactional`</strong>。
 		
-</p>
+
 
 
 ## 前端
