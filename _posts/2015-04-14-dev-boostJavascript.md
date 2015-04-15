@@ -17,7 +17,8 @@ category: javascript
 uglify等工具，去掉空行。减小js文件体积。
 
 * 引入min脚本
-如 
+如
+ 
 ```HTML
 
 <script src = "jquery.min.js"></script>
