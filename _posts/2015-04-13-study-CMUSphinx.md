@@ -184,7 +184,7 @@ category: SpeechRec
 ## 样本量要求
 
 
-1 hour of recording for command and control for single speaker<br>
+> 1 hour of recording for command and control for single speaker<br>
 5 hour of recordings of 200 speakers for command and control for many speakers<br>
 10 hours of recordings for single speaker dictation<br>
 50 hours of recordings of 200 speakers for many speakers dictation<br>
