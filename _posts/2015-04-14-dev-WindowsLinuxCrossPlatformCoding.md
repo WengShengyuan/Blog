@@ -60,7 +60,6 @@ category: JAVA
 原因在于 SecureRandom 实现完全随操作系统本身的內部状态，除非调用方在调用 getInstance 方法，然后调用 setSeed 方法；
 
 该实现在 windows 上每次生成的 key 都相同，但是在 solaris 或部分 linux 系统上则不同。关于SecureRandom类的详细介绍，见
-
 [SecureRandom](http://yangzb.iteye.com/blog/325264">SecureRandom)
 
 

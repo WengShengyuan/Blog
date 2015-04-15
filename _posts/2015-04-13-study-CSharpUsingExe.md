@@ -91,14 +91,14 @@ category: CSharp
 
 * 调用svmscale.exe进行归一化
 
-`svmscale.exe feature.txt feature.scaled`
+> `svmscale.exe feature.txt feature.scaled`
 
 * 调用svmtrtrain.exe进行训练
 
-`svmtrain.exe -s 3 -p 0.0001 -t 2 -g 32 -c 0.53125 -n 0.99 feature.scaled`
+> `svmtrain.exe -s 3 -p 0.0001 -t 2 -g 32 -c 0.53125 -n 0.99 feature.scaled`
 
 * 调用svmpredict.exe进行预测
 
-`svmpredict.exe feature_test.scaled feature.scaled.model feature_test.predicted`
+> `svmpredict.exe feature_test.scaled feature.scaled.model feature_test.predicted`
 
 * 将结果文本转为DataSet导入C#中进行进一步处理
