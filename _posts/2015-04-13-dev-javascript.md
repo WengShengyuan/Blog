@@ -201,6 +201,25 @@ category: javascript
 
 ```
 
+### 从cookie读取为Object
+
+* Object以json格式存在cookie中
+
+* 用`eval()`函数恢复成Object
+
+```javascript
+
+	//Json to Obj
+	var ObjectJson = $.cookie('obj');
+	var obj = eval(ObjectJson);
+	
+	
+	//Obj to Json
+	// [{"param1" : "value1" , "param2" : "value2"}]
+	var json = "[{\"param1\":\"" + value1 + "\",\"param2\":\"" + value2 + "\"}]";
+
+```
+
 
 # jquery-mobile
 
