@@ -52,13 +52,13 @@ common-utils<br>
 
 * 公共接口
 
-	1。 数据层 `GenericDao`, `GenericDaoImpl`
+	1. 数据层 `GenericDao`, `GenericDaoImpl`
 	
-		所有项目的公共实现，如：增、删、改、查...。
+	所有项目的公共实现，如：增、删、改、查...。
 		
 	2。 服务层 `GenericService`, `GenericServiceImpl
 
-		所有项目的业务实现。
+	所有项目的业务实现。
 		
 
 
