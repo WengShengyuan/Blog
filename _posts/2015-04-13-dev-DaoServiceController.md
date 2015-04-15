@@ -265,7 +265,8 @@ web<br>
 
 ## 埋点
 
-埋点工作最好在项目进行中时就留意进行。初期可以先写个日志工具`logger`，并加上空方法，甚至简单的`System.out.println()`都行。<br>
+埋点工作最好在项目进行中时就留意进行。初期可以先写个日志工具`logger`，并加上空方法，甚至简单的`System.out.println()`都行。
+
 <strong>避免在日志点直接写入日志实现方法，这样对于后期统一的修改有好处。</strong>
 
 ## 不同级别的日志
@@ -280,7 +281,8 @@ web<br>
 
 * 通过`config`在外部实现日志级别的处理
 
-设置日志级别	<strong>DEBUG(3) > INFO(2) > ERROR(1) > NONE(0)<br></strong>
+设置日志级别	<strong>DEBUG(3) > INFO(2) > ERROR(1) > NONE(0)</strong>
+
 则当设置`logLevel = 3 `时，会记录所有日志； 当`logLevel = 1`时，就只会记录系统错误日志了。
 
 伪代码如下:
