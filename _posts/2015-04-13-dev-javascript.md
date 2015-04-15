@@ -233,16 +233,20 @@ category: javascript
 
 * 特性与解决
 
-卸载jquery-mobile页面的<head>中的js引用只会在打开第一个页面时候载入，之后的页面跳转仅载入<page>内的内容，所以第二页面的<head>实际没有起作用。<br>
-解决方式:<br>
+卸载jquery-mobile页面的<head>中的js引用只会在打开第一个页面时候载入，之后的页面跳转仅载入<page>内的内容，所以第二页面的<head>实际没有起作用。
+
+解决方式:
+
 在第二页需要继续引入的包放在<page>中。
 
 # bootstrap
 
 ## 可视化构建
 
-页面框架构建比jquery-mobile方便。有可视化构建工具，其一大优点即默认生成的就是带自适应的HTML页面。可以轻松实现跨设备浏览。<br>
-<a href="http://www.layoutit.com/">layoutIt!</a><br>
+页面框架构建比jquery-mobile方便。有可视化构建工具，其一大优点即默认生成的就是带自适应的HTML页面。可以轻松实现跨设备浏览。
+
+[layoutIt!](http://www.layoutit.com/)
+
 可以快速构建页面框架，然后在其基础上进行补充与修改。
 
 
