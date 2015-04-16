@@ -50,7 +50,7 @@ category: JAVA
 
 如上所示要用 File.separator;
 
-* 可以自己做一个工具如[CustomFileUtils](http://github.com/wengshengyuan/customutils)来拼接路径
+* 可以自己做一个工具如[CustomFileUtils](http://github.com/WengShengyuan/CustomUtils/blob/master/src/main/custom/CustomFileUtils.java)来拼接路径
 
 ```java
 
