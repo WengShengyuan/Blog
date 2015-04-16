@@ -50,6 +50,28 @@ category: JAVA
 
 如上所示要用 File.separator;
 
+* 可以自己做一个工具如[CustomFileUtils](http://github.com/wengshengyuan/customutils)来拼接路径
+
+```java
+
+/**
+	 * 拼接路径
+	 * @param pathList a, b, c, d
+	 * @return a/b/c/d 
+	 */
+	public static String parsePath(String ... pathList){
+		if(pathList.length == 0){
+			return "";
+		}
+		StringBuilder sb = new StringBuilder();
+		for(String o : pathList){
+			sb.append(o).append(File.separator);
+		}
+		return sb.toString().substring(0,sb.length()-1);
+	}
+
+```
+
 ## 加密解密问题
 
 在windows上进行加密后，从Linux解密会出现<br>
