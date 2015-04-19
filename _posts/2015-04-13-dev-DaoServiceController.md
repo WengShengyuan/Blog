@@ -7,7 +7,7 @@ category: SpringMVC
 
 
 
- *4原19日更新* : 已在Github中上传了精简的SpringMVC框架的MAVEN工程包。可以在进行简单配置后使用。 
+ *4月19日更新* : 已在Github中上传了精简的SpringMVC框架的MAVEN工程包。可以在进行简单配置后使用。 
  
  链接： [springMVC](https://github.com/WengShengyuan/springMVC)
 
