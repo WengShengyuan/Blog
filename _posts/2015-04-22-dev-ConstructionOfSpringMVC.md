@@ -1137,64 +1137,6 @@ public class MethodCacheInterceptor implements MethodInterceptor,
 		}
 	}
 
-//	/**
-//	 * when find triggered, get key
-//	 * 
-//	 * @param invocation
-//	 * @return
-//	 * @throws Throwable
-//	 */
-//	private Object get(MethodInvocation invocation) throws Throwable {
-//		String targetName = invocation.getThis().getClass().getName();
-//		String methodName = invocation.getMethod().getName();
-//		Object[] arguments = invocation.getArguments();
-//		Object result;
-//
-//		String cacheKey = getCacheKey(targetName, methodName, arguments);
-//		System.out.println("getting from cache...");
-//		Element element = cache.get(cacheKey);
-//		System.out.println("cache Key:" + cacheKey);
-//		if (element == null) {
-//			System.out.println("miss");
-//			result = invocation.proceed();
-//			element = new Element(cacheKey, (Serializable) result);
-//			cache.put(element);
-//			return element.getValue();
-//		} else {
-//			System.out.println("hit");
-//			return element.getValue();
-//		}
-//	}
-//
-//	/**
-//	 * when remove, update triggered, remove key
-//	 * 
-//	 * @param invocation
-//	 * @return
-//	 * @throws Throwable
-//	 */
-//	private Object remove(MethodInvocation invocation) throws Throwable {
-//		String targetName = invocation.getThis().getClass().getName();
-//		String methodName = invocation.getMethod().getName();
-//		Object[] arguments = invocation.getArguments();
-//		Object result;
-//
-//		String cacheKey = getCacheKey(targetName, methodName, arguments);
-//		List list = cache.getKeys();
-//		System.out.println("removing from cache...");
-//		System.out.println("removing cache key:" + cacheKey);
-//		for (int i = 0; i < list.size(); i++) {
-//			String curKey = String.valueOf(list.get(i));
-//			if (cacheKey.equals(curKey)) {
-//				System.out.println("found key:" + cacheKey);
-//				cache.remove(cacheKey);
-//			}
-//		}
-//
-//		System.out.println("back to origin...");
-//		result = invocation.proceed();
-//		return result;
-//
 //	}
 
 	/**
@@ -1265,5 +1207,26 @@ public class MethodCacheAfterAdvice implements AfterReturningAdvice, Initializin
 }   
 
 ```
+
+** 配置
+
+配置详见  `applicationContext.xml` 以及 `applicationContext-ehcache.xml`
+
+*** 拦截器
+
+主要分为如下定义:
+
+1. EHCACHE声明
+
+2. 拦截器(指向自定义的拦截类)
+
+3. 切入点(指定哪些方法会被拦截)
+
+
+
+*** AOP设置拦截
+
+将自己的目标service类与拦截器绑定。
+
 
 
