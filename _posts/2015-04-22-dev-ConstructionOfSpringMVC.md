@@ -1229,4 +1229,9 @@ public class MethodCacheAfterAdvice implements AfterReturningAdvice, Initializin
 将自己的目标service类与拦截器绑定。
 
 
+缓存的最终实现效果如图:
+
+![]({{site.baseurl}}/images/post_images/2015-04-22-dev-ConstructionOfSpringMVC/IMG_3822.JPG)
+
+
 
