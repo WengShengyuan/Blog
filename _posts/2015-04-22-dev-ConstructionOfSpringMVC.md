@@ -8,7 +8,18 @@ category: SpringMVC
 
 # 基本配置
 
+
 ## MAVEN 依赖
+
+* 项目结构
+
+* pom.xml配置
+
+** project -> pom.xml
+
+** core -> pom.xml
+
+** web -> pom.xml
 
 
 ## web.xml
