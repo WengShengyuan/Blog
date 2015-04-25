@@ -31,7 +31,7 @@ AOP的应用场景很多。可以作为日志系统的记录拦截，也可以�
 ## 简单的配置以及实现效果
 
 
-* Ehcache配置
+### Ehcache配置
 
 ehcache的配置文件默认在	`classpath:ehcache.xml` MAVEN工程对应 `src/main/resources` 。定义了缓存的配置信息，* 必须有一个 默认缓存defaultCache *。在管理器找不到缓存的时候，就会用默认缓存。
 
@@ -68,11 +68,11 @@ ehcache的配置文件默认在	`classpath:ehcache.xml` MAVEN工程对应 `src/m
 
 ```
 
-* AOP拦截
+### AOP拦截
 
-首先写好拦截器java代码。根据功能不同分为取缓存的拦截器，以及删除缓存的拦截器。
+#### 拦截器编写
 
-	** 取缓存 `MethodCacheInterceptor` 
+* 取缓存 `MethodCacheInterceptor` 
 	
 ```java
 
@@ -162,7 +162,7 @@ public class MethodCacheInterceptor implements MethodInterceptor,
 
 ```
 
-	** 删除缓存
+* 删除缓存
 	
 ```java
 
@@ -212,25 +212,93 @@ public class MethodCacheAfterAdvice implements AfterReturningAdvice, Initializin
 
 ```
 
-** 配置
+#### 配置文件
 
-配置详见  `applicationContext.xml` 以及 `applicationContext-ehcache.xml`
+配置详见  `applicationContext-ehcache.xml`
 
-*** 拦截器
+##### 注册拦截器类
 
-主要分为如下定义:
+声明了拦截器的BEAN
 
-1. EHCACHE声明
+```xml
 
-2. 拦截器(指向自定义的拦截类)
+	<!-- find/create cache拦截器 -->  
+	<bean id="methodCacheInterceptor" class="org.company.frame.interceptor.MethodCacheInterceptor">
+		<property name="cache">
+			<ref local="demoCache" />
+		</property>
+	</bean>
+	<!-- flush cache拦截器 -->  
+    <bean id="methodCacheAfterAdvice" class="org.company.frame.interceptor.MethodCacheAfterAdvice">  
+      <property name="cache">  
+        <ref local="demoCache" />  
+      </property>  
+    </bean>  
 
-3. 切入点(指定哪些方法会被拦截)
+```
 
+##### 切入点声明
 
+将拦截器BEAN与方法匹配。
 
-*** AOP设置拦截
+```xml
 
-将自己的目标service类与拦截器绑定。
+	<!-- find/get cache拦截器方法匹配 -->
+	<bean id="methodCachePointCut"
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice">
+			<ref local="methodCacheInterceptor" />
+		</property>
+		<property name="patterns">
+			<list>
+				<value>org.company.core.*.service.*find.*</value>
+			</list>
+		</property>
+	</bean>
+	<!-- flush 拦截器方法匹配  -->
+	<bean id="methodCachePointCutAdvice" 
+		class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">  
+      <property name="advice">  
+        <ref local="methodCacheAfterAdvice"/>  
+      </property>  
+      <property name="patterns">  
+        <list>  
+          <value>org.company.core.*.service.*create.*</value>  
+          <value>org.company.core.*.service.*update.*</value>  
+          <value>org.company.core.*.service.*delete.*</value>  
+        </list>  
+      </property>  
+    </bean>
+
+```
+
+##### AOP的最终声明
+
+绑定服务BEAN与拦截器切入点。
+
+```xml
+
+    <!-- AOP 的最终配置 -->
+	<!-- BEAN与find/get 拦截器关联 -->
+	<bean id="myService" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target">
+			<ref local="testTableServiceBean" />
+		</property>
+		<property name="interceptorNames">
+			<list>
+				<value>methodCachePointCut</value>
+				<value>methodCachePointCutAdvice</value>
+			</list>
+		</property>
+	</bean> 
+	
+	
+	<!-- 拦截BEAN -->
+	<bean id="testTableServiceBean" class="org.company.core.moduel.service.TestTableServiceImpl">
+	</bean>
+
+```
+
 
 
 缓存的最终实现效果如图:
