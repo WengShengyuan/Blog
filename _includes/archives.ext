@@ -9,7 +9,8 @@
         {% if month != nmonth %}
             {% capture curcount %}{{postcount | minus: precount}}{% endcapture %}
             <li>
-                <a href="{{ site.baseurl }}/{{ post.date | date: '%Y/%m' }}">
+                <!-- a href="{{ site.baseurl }}/{{ post.date | date: '%Y/%m' }}" -->
+                <a href="#">
                     {{ post.date | date: '%Y-%m' }} ({{curcount}})
                 </a>
             </li>
