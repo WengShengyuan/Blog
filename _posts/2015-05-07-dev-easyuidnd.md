@@ -55,3 +55,14 @@ category: easyui
  
 
 ```
+
+## 参考
+
+* 常用事件
+
+[jQuery EasyUI 扩展 - 数据网格行拖放（Drag and Drop Rows in DataGrid）](http://www.w3cschool.cc/jeasyui/ext-datagrid-dnd.html)
+
+
+网上中文博客真的很少。。。最近翻不出去了所以不太好找资料
+
+
