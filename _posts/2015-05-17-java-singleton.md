@@ -100,6 +100,8 @@ public class Singleton {
 	}
 }
 
+```
+
 ### 方法3：双重加锁，减少使用同步
 
 尽在要创建的时候使用同步方法
@@ -128,5 +130,5 @@ public class Singleton {
 
 ```
 
-```
+
 
