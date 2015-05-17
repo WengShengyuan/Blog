@@ -8,8 +8,7 @@ category: SpringMVC
 
 框架项目请跳转到: [springMVC](https://github.com/WengShengyuan/springMVC)
 
-该框架并非从头开始搭建，而是先从实际项目中精简下来，再加入自己的特性，如:AOP 实现对Service层计算结果的缓存。
-从改包的过程中，学习Spring框架的知识。
+本文在他人框架配置文件的基础上，学习Spring框架的知识，同时也结合多篇博文对框架进行改进与增加工鞥，比如缓存、多数据源以及AOP实现缓存处理等内容。仅供交流。
 
 *感谢ZBB， 老乡就是给力!*
 

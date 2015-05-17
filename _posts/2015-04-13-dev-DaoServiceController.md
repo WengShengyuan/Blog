@@ -11,7 +11,7 @@ category: SpringMVC
  
  链接： [springMVC](https://github.com/WengShengyuan/springMVC)
 
-首先SpringMVC框架不是我搭的 T.T，我只是用了这个框架在开发，同时在开发过程中总结了写小经验分享分享。
+本文仅作SpringMVC框架使用过程中的一些个人总结。
 
 # 项目结构
 
