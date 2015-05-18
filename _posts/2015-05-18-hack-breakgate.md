@@ -20,7 +20,7 @@ category: hack
 
 ![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/login.jpg)
 
-但是对对方的网络设备和环境还是不了解，因此我就尝试查找端口为7755的网络管理设备有什么。很幸运，只有一个：天融信的topGate系列。
+但是对于对方的网络设备和环境还是不了解，因此我就尝试查找端口为7755的网络管理设备有什么。很幸运，只有一个：天融信的topGate系列。
 
 ### 2-查找设备手册
 
@@ -49,7 +49,7 @@ category: hack
 
 ![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/back.jpg)
 
-因此下载下来看看，里边是一堆发现完全没有加密的文本文件，而且文件名写的清清楚楚：txt_user_info.tar，打开后分别出现了t_sys_admin.txt和t_sys_user.txt
+因此下载下来看看，里边是一堆发现完全没有加密的文本文件，而且文件名写的清清楚楚：txt\_user\_info.tar，打开后分别出现了t\_sys\_admin.txt和t\_sys\_user.txt
 
 所有用户的用户名和密码就整齐的展现在我的面前了。
 
