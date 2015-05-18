@@ -18,7 +18,7 @@ category: hack
 
 在未登陆时候，打开任意网站均会跳转至统一的登陆页面，该页面并没有对IP进行隐藏，因此我轻易得到了服务器的IP和端口。http://192.168.100.253:7755/
 
-[登陆地址]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/login.jpg)
+![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/login.jpg)
 
 但是对对方的网络设备和环境还是不了解，因此我就尝试查找端口为7755的网络管理设备有什么。很幸运，只有一个：天融信的topGate系列。
 
@@ -28,7 +28,7 @@ category: hack
 
 因此我现在就可以以admin的身份在服务器中随意游荡。
 
-[登陆地址]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/console.jpg)
+![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/console.jpg)
 
 
 ### 3-查找日志
@@ -39,7 +39,7 @@ category: hack
 
 从字符串中就能找到管理员登陆的页面地址。
 
-[登陆地址]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/log.jpg)
+![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/log.jpg)
 
 可是日志中的用户名和密码并不能使用，一看日志时间发现是2011年的。因此最近的日志可能被人关掉了。只能从别的地方想办法。
 
@@ -47,17 +47,17 @@ category: hack
 
 在其它文件夹中浏览的时候，发现了一堆类似备份文件的tar包.
 
-[登陆地址]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/back.jpg)
+![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/back.jpg)
 
 因此下载下来看看，里边是一堆发现完全没有加密的文本文件，而且文件名写的清清楚楚：txt_user_info.tar，打开后分别出现了t_sys_admin.txt和t_sys_user.txt
 
 所有用户的用户名和密码就整齐的展现在我的面前了。
 
-[登陆地址]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/password.jpg)
+![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/password.jpg)
 
 最后我尝试了超级管理员用户的账号和密码，轻易就登上了。。。。。。
 
-[登陆地址]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/success.jpg)
+![]({{site.baseurl}}/images/post_images/2015-05-18-hack-breakgate/success.jpg)
 
 
 ## 总结
