@@ -100,6 +100,28 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
 
 ```
 
+#### 方法2：`ng-model + ng-bind`
+
+效果与方法1相同，但是后者是渲染过后呈现，免去了源代码被看到的风险。
+
+```HTML
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 测试页 </title>
+		<meta charset="utf-8">
+		<script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="">
+		   <p>请输入一个名字：<input type="text" ng-model="name"></p>
+		   <p>Hello <span ng-bind="name"></span></p>
+		</div>
+	</body>
+</html>
+
+```
 
 ### 控制器
 
@@ -146,28 +168,6 @@ function MyController($scope) {
 
 ```
 
-#### 方法2：`ng-model + ng-bind`
-
-效果与方法1相同，但是后者是渲染过后呈现，免去了源代码被看到的风险。
-
-```HTML
-
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title> 测试页 </title>
-		<meta charset="utf-8">
-		<script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
-	</head>
-	<body>
-		<div ng-app="">
-		   <p>请输入一个名字：<input type="text" ng-model="name"></p>
-		   <p>Hello <span ng-bind="name"></span></p>
-		</div>
-	</body>
-</html>
-
-```
 
 ## 学习参考
 
