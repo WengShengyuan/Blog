@@ -108,7 +108,7 @@ customLinks:
 #comment config
 disqus:
   config: false
-  id: 422142843@qq.com
+  id: @wengshengyuan
 
 
 
@@ -122,7 +122,7 @@ highlighter: pygments
 title: 嗡汤圆
 description: 嗡汤圆的迷你博客V2.0
 theme: kunka
-disqusname: 422142843@qq.com
+disqusname: @wengshengyuan
 
 
 
