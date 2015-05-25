@@ -43,6 +43,27 @@ category: angularjs
 
 ### 在WEB中引入AngularJs
 
+最简单的页面如下：
+
+```HTML
+
+<!doctype html>
+<html ng-app>
+    <head>
+        <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    </head>
+    <body>
+        Hello {{'World'}}!
+    </body>
+</html>
+
+```
+
+页面处理流程：
+
+* 1、载入HTML，JS
+
+* 2、js脚本寻找到`ng-app`便签，启动AngularJs进行编译与处理。
 
 
 
@@ -51,3 +72,7 @@ category: angularjs
 [AngularJs中文网](http://www.apjs.net/)
 
 [AngularJs实战](http://www.imooc.com/learn/156)
+
+[AngularJs中文社区](http://angularjs.cn/T008)
+
+[汇智网视频教程](http://www.hubwiz.com/coursecenter)
