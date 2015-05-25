@@ -169,6 +169,9 @@ function MyController($scope) {
 ```
 
 
+以上是AngularJs最基本的建立与使用，进阶用法待项目实践后补充。
+
+
 ## 学习参考
 
 [AngularJs中文网](http://www.apjs.net/)
