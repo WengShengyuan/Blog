@@ -79,7 +79,7 @@ category: angularjs
 
 AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码，十分方便。DOM和数据源(scope)中任意一方数据改变，均可以使另一方跟着变化。
 
-#### 方法1：`ng-model  + {{"{{" + "}}"}} `
+#### 方法1：`ng-model  +  \{\{}} `
 
 ```HTML
 
@@ -93,7 +93,7 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
 	<body>
 		<div ng-app="">
 	  		<p>请输入任意值：<input type="text" ng-model="name"></p>
-	  		<p>你输入的为： {{"{{"+ "name"+ "}}"}}</p>
+	  		<p>你输入的为： \{\{name}}</p>
 		</div>
 	</body>
 </html>
