@@ -149,7 +149,7 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
         <input type="text" ng-model="username">
         <button ng-click="sayHello()">打招呼</button>
       <hr>
-      _{{greeting}}_
+      \{{greeting\}}
 	</div>
 
 </body>
