@@ -7,6 +7,9 @@ category: angularjs
 
 
 ## 前言
+
+### 需求
+
 在第一次尝试开发WEB应用的时候，由于缺乏经验，同时任务时间紧迫，边学习边开发，错过了angularjs这样一个优秀的MVC前端框架。
 (当时甚至还不懂MVC事神马=.=)
 
@@ -27,3 +30,24 @@ category: angularjs
 项目地址：[augularjsPractice](https://github.com/WengShengyuan/angularjsPractice).边学习边尝试开发。
 
 这篇日志也会随时更新，或者开辟新的专题博文。
+
+### angularjs的特点
+
+* 将应用逻辑与对DOM的操作解耦。这会提高代码的可测试性。
+
+* Angular遵循软件工程的MVC模式,并鼓励展现，数据，和逻辑组件之间的松耦合.通过依赖注入（dependency injection），Angular为客户端的Web应用带来了传统服务端的服务，例如独立于视图的控制。 
+
+* 双向数据绑定.
+
+## 入门
+
+### 在WEB中引入AngularJs
+
+
+
+
+## 学习参考
+
+[AngularJs中文网](http://www.apjs.net/)
+
+[AngularJs实战](http://www.imooc.com/learn/156)
