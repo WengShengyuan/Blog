@@ -68,7 +68,8 @@ public interface Service {
 		    resultList = query.getResultList();
 		} catch (Exception e) {
 		    WifiLogUtil.wifiLogError("GenericDaoImpl.class findAll", e);
-		    throw new SystemWifiException("查询数据库出错，请确认sql语句是否正确或者链接是否正确。");
+		    throw new SystemWifiException
+		    ("查询数据库出错，请确认sql语句是否正确或者链接是否正确。");
 		}
 		return resultList;
 	}
