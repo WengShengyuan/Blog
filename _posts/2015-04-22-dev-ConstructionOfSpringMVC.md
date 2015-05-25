@@ -2,7 +2,7 @@
 layout: default
 title: 搭建SpringMVC框架
 comments: true
-category: SpringMVC
+category: MVC
 ---
 
 

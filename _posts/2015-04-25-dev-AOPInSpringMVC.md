@@ -2,7 +2,7 @@
 layout: default
 title: 通过AOP方式实现Service计算结果的缓存
 comments: true
-category: SpringMVC
+category: MVC
 ---
 
 
