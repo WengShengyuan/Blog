@@ -31,7 +31,7 @@ excerpt_separator: "\n\n"
 detach:       false
 port:         4000
 host:         127.0.0.1
-baseurl:      "Blog" # does not include hostname
+baseurl:      "" # does not include hostname
 
 # Outputting
 permalink:     date
@@ -67,16 +67,9 @@ author:
     imageLink: https://wengshengyuan.github.io/Blog/images/Avatar-big.jpg
     simpleIntro: 我是 嗡汤圆 
     detailIntro:
-            <p>
-            	这个博客是参考 minixalpha的博客为模板填充如自己的日志生成的。
-            </p>
-            <p>
-            	有很长一段时间我仅仅是使用为知笔记或者有道笔记来记录我的学习笔记，有的原创，也有摘录。很久以前我就想自己建立一个博客，但是苦于没有合适的地方，一些常规的博客网站不能随心所欲得定制样式，最终还是Github比较理想，而且还能顺带托管我的一些代码。虽然这些代码很low，但是总能养成一个良好的维护习惯，不至于辛辛苦苦写的一些代码最终被一不小心删除。
-            </p>
-            
-            <p>
-            	最后感谢minixalpha能提供如此方便快捷的博客框架。
-            </p>
+            <p>这个博客是参考 minixalpha的博客为模板填充如自己的日志生成的。</p>
+            <p>有很长一段时间我仅仅是使用为知笔记或者有道笔记来记录我的学习笔记，有的原创，也有摘录。很久以前我就想自己建立一个博客，但是苦于没有合适的地方，一些常规的博客网站不能随心所欲得定制样式，最终还是Github比较理想，而且还能顺带托管我的一些代码。虽然这些代码很low，但是总能养成一个良好的维护习惯，不至于辛辛苦苦写的一些代码最终被一不小心删除。</p>
+            <p>最后感谢minixalpha能提供如此方便快捷的博客框架。</p>
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
@@ -126,10 +119,9 @@ baseurl: /Blog
 markdown: redcarpet
 safe: false
 highlighter: pygments
-pygments: true
 title: 嗡汤圆
 description: 嗡汤圆的迷你博客V2.0
-theme: kunka 
+theme: kunka
 disqusname: 6655449987
 
 
