@@ -18,7 +18,7 @@ category: MVC
 @Controller
 public class Controller {
 
-	@RequestMapping(value= "route")
+	@RequestMapping(value= "/route")
 	public ModelAndView route(HttpServletRequest request, HttpServletResponse response){
 		service.processsRoute(request);
 	}
@@ -42,6 +42,41 @@ public interface Service {
 * 数据处理分离有助于解耦，这样在WEB以及APP共同开发的环境下，可以比较容易得实现代码复用。
 
 * 目前许多前端MVC框架开发的案例均使用独立的数据获取，并将数据与前台DOM绑定的形式进行开发。
+
+比如：
+
+```java
+
+//仅返回页面资源
+@Controller
+public class WebController {
+
+	@RequestMapping(value= "/route")
+	public ModelAndView route(HttpServletRequest request, HttpServletResponse response){
+		ModelAndView model = new ModelAndView();
+		model.setViewName("/web/route");
+		return model;		
+	}
+
+}
+
+//处理数据并返回数据实体
+@Controller
+@RequestMapping(value = "/api")
+public class APIController{
+
+	@RequestMapping(value= "/route")
+	@ResponseBody
+	public PageBean route(HttpServletRequest request, HttpServletResponse response){
+		PageBean bean = APIservice.getDate(request);
+		return bean;
+	}
+
+}
+
+```
+
+这样在页面中就可以使用ajax来异步加载数据了。
 
 因此可以为模块开始WebController以及APIController分别处理请求。
 
