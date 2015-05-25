@@ -16,11 +16,11 @@ category: angularjs
 后来第一次接触javascript, jquery学会了基本的javascript语法，并解除了jquery-modile, easyui等等优秀的框架，
 大大减轻了前端开发的痛苦，但是无论使用什么框架，本质的对DOM的直接操作是避免不了的。于是出现了这样的情况：
 
-1、开发时美工没有就位，因此我苦逼的即写后台，前端HTML, CSS, JS全由我一人承包。。。好不容易做出个模型来，美工过来了(尼玛=.=)
+* 1、开发时美工没有就位，因此我苦逼的即写后台，前端HTML, CSS, JS全由我一人承包。。。好不容易做出个模型来，美工过来了(尼玛=.=)
 美工开发了一套界面，于是原来的`<ul>`列表变成了`<table>`; `<input>`变成了`<div>`。。。。等等
 由于JS直接和DOM绑定了，因此界面DOM一变，脚本也得跟着改，又写循环脚本甚至得重写。十分麻烦。
 
-2、很多页面的输入组件并没有很好的模块化，导致当很多页面都出现同样功能时候，这些代码得复制好几遍，修改的时候也得在好几个地方修改。有时候一不小心
+* 2、很多页面的输入组件并没有很好的模块化，导致当很多页面都出现同样功能时候，这些代码得复制好几遍，修改的时候也得在好几个地方修改。有时候一不小心
 忘记修改了某个地方就呵呵了。。。。
 
 由上可以看出，即使是前端，逻辑与界面的解耦已经十分必要了。angularjs框架正好满足了这些需要。同时它的一些数据绑定特性也能帮助开发者减少很大一部分DOM和数据处理的代码。
@@ -75,7 +75,53 @@ category: angularjs
 
 * 2、js脚本寻找到`ng-app`便签，启动AngularJs进行编译与处理。
 
+### 数据绑定特性
 
+AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码，十分方便。DOM和数据源(scope)中任意一方数据改变，均可以使另一方跟着变化。
+
+#### 方法1：`ng-model + {{}}`
+
+```HTML
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 测试页 </title>
+		<meta charset="utf-8">
+		<script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="">
+	  		<p>请输入任意值：<input type="text" ng-model="name"></p>
+	  		<p>你输入的为： {{ name }}</p>
+		</div>
+	</body>
+</html>
+
+```
+
+#### 方法2：`ng-model + ng-bind`
+
+效果与方法1相同，但是后者是渲染过后呈现，免去了源代码被看到的风险。
+
+```HTML
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> 测试页 </title>
+		<meta charset="utf-8">
+		<script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="">
+		   <p>请输入一个名字：<input type="text" ng-model="name"></p>
+		   <p>Hello <span ng-bind="name"></span></p>
+		</div>
+	</body>
+</html>
+
+```
 
 ## 学习参考
 
