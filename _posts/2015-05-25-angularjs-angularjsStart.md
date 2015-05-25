@@ -48,16 +48,27 @@ category: angularjs
 ```HTML
 
 <!doctype html>
-<html ng-app>
-    <head>
-        <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
-    </head>
-    <body>
-        Hello {{'World'}}!
-    </body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>测试页 </title>
+		<meta charset="utf-8">
+		<script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app="" ng-init="name='World'">
+		   Hello {{ name }}！
+		</div>	
+	</body>
 </html>
 
 ```
+
+必要步骤:
+
+* 1、标注AngularJs处理的区域，加上`ng-app`
+
+* 2、引入angularjs包`http://code.angularjs.org/angular-1.0.1.min.js`
 
 页面处理流程：
 
@@ -75,4 +86,4 @@ category: angularjs
 
 [AngularJs中文社区](http://angularjs.cn/T008)
 
-[汇智网视频教程](http://www.hubwiz.com/coursecenter)
+[汇智网自学教程](http://www.hubwiz.com/coursecenter)
