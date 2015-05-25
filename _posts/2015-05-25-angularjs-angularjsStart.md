@@ -93,7 +93,7 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
 	<body>
 		<div ng-app="">
 	  		<p>请输入任意值：<input type="text" ng-model="name"></p>
-	  		<p>你输入的为： {{"{{ name }}"}}</p>
+	  		<p>你输入的为： {{"{{"+ "name"+ "}}"}}</p>
 		</div>
 	</body>
 </html>
