@@ -100,6 +100,52 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
 
 ```
 
+
+### 控制器
+
+在div中使用`ng-controller`，在js中声明一个同名的function作为controller的控制代码（声明，函数等）。
+
+* 每声明一个controller, 则自动声明一个scope（域），如果没有特殊声明，则与上一级scope相同。
+
+* controller中寻找任何属性时候，如果在当前scope中找不到，则会去上一级scope寻找，一直到rootScope为止。其中rootScope对应ng-app这一级的DOM。
+
+例如：
+
+```HTML
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> 测试页 </title>
+	<meta charset="utf-8">
+	<script src="http://www.hubwiz.com/scripts/angular.min.js"></script>
+</head>
+<body>
+  
+  <div ng-app="" ng-controller="MyController">
+      Your name:
+        <input type="text" ng-model="username">
+        <button ng-click="sayHello()">打招呼</button>
+      <hr>
+      {{greeting}}
+	</div>
+
+</body>
+</html>
+
+```
+
+```javascript
+
+function MyController($scope) {
+  $scope.username = 'World';
+  $scope.sayHello = function() {
+    $scope.greeting= 'Hello ' + $scope.username + '!';
+  };
+}
+
+```
+
 #### 方法2：`ng-model + ng-bind`
 
 效果与方法1相同，但是后者是渲染过后呈现，免去了源代码被看到的风险。
