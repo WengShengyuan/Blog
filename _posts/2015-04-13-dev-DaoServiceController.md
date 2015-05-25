@@ -2,7 +2,7 @@
 layout: default
 title: 个人使用SpringMVC框架项目的心得
 comments: true
-category: SpringMVC
+category: MVC
 ---
 
 
