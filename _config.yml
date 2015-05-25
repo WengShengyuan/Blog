@@ -126,6 +126,7 @@ baseurl: /Blog
 markdown: redcarpet
 safe: false
 highlighter: pygments
+pygments: true
 title: 嗡汤圆
 description: 嗡汤圆的迷你博客V2.0
 theme: kunka 
