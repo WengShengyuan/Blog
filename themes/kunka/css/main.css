@@ -205,7 +205,7 @@ a         { color: #91736b; text-decoration: none; }
     position: absolute;
     top: 0;
     left: -62px;
-    content: "❝";
+    content: "鉂�";
     background: #44635d;
     background: -moz-linear-gradient(0deg, #44635d 0%, #44635d 90%,  #263733 100%);
     background: -webkit-linear-gradient(0deg, #44635d 0%, #44635d 90%, #263733 100%);
@@ -233,7 +233,7 @@ a         { color: #91736b; text-decoration: none; }
 }
 
 .main .article table:after {
-    content: "⊞";
+    content: "鈯�";
     width: 32px;
     height: 32px;
     display: block;
@@ -448,7 +448,7 @@ a         { color: #91736b; text-decoration: none; }
     height: auto;
 }
 .main .article .about:after {
-    content: "❍";
+    content: "鉂�";
     width: 32px;
     height: 32px;
     display: block;
@@ -494,7 +494,7 @@ a         { color: #91736b; text-decoration: none; }
     height: auto;
 }
 .main .article .social:after {
-    content: "☛";
+    content: "鈽�";
     width: 32px;
     height: 32px;
     display: block;
