@@ -159,6 +159,7 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
 
 ```javascript
 
+//新版的angularjs已经不允许在根下直接注入controller.因此应该对注入方式进行修改
 function MyController($scope) {
   $scope.username = 'World';
   $scope.sayHello = function() {
@@ -166,6 +167,47 @@ function MyController($scope) {
   };
 }
 
+```
+
+修改如下
+
+```HTML
+
+	<html>
+<head>
+<title>AngularJs</title>
+<script th:include="layout/common::common-header" th:remove="tag"></script>
+<script src="web/index.js" th:src="@{/resources/web/index.js}"></script>
+
+
+</head>
+<body ng-app="indexApp">
+
+	<div ng-controller="IndexController">
+		<button ng-click="sayHello()">打招呼</button>
+		<hr></hr>
+		\{\{user}}
+	</div>
+
+</body>
+
+
+
+</html>
+
+```
+
+
+```javascript
+	
+	var indexApp = angular.module('indexApp', []);
+indexApp.controller('IndexController',function($scope) {
+	$scope.user="Angular";
+	$scope.sayHello=function(){
+		alert('Hello');
+	};
+});
+	
 ```
 
 
