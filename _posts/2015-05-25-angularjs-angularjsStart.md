@@ -47,7 +47,6 @@ category: angularjs
 
 ```HTML
 
-<!doctype html>
 <!DOCTYPE HTML>
 <html>
 	<head>
