@@ -112,6 +112,3 @@ $scope.addOneServiceTrigger = function() {
 
 调用方法如上所示。
 
-## 将service模块化
-
-将某些特定功能的service集合归纳集中入一个js文件中，作为模块引入。（待完成。）
