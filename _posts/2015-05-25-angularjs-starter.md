@@ -243,4 +243,4 @@ indexApp.controller('IndexController',function($scope) {
 
 [汇智网自学教程](http://www.hubwiz.com/coursecenter)
 
-[AngularJs教程](http://www.yiibai.com/angularjs/)
+[AngularJs教程](http://www.yiibai.com/angularjs/) <- 特别推荐
