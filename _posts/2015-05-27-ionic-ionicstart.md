@@ -11,3 +11,5 @@ category: ionic
 ## 参考资料
 
 [ionic doc](http://www.ionicframework.com/docs/) <- 官方
+
+[ionic 中文社区](http://ionichina.com/) 
