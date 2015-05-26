@@ -102,6 +102,25 @@ AngularJs的数据绑定特性， 减少了大量DOM与数据源的处理代码�
 
 #### 方法2：`ng-model + ng-bind`
 
+
+### ajax数据源与view的绑定
+
+使用$http对象进行
+
+```javascript
+
+$http({  
+		method: 'GET',  
+		url: '/web/test/api/getUser'})
+		.success(function(data, status, headers, config) {
+			$scope.valueViaHttp = data.map.user[0];
+		})
+		.error(function(data, status, headers, config) {
+			console.log('ajax $http error');
+		});
+
+```
+
 效果与方法1相同，但是后者是渲染过后呈现，免去了源代码被看到的风险。
 
 ```HTML
