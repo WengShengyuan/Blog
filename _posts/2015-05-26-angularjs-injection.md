@@ -49,8 +49,8 @@ indexApp.controller('IndexController', function($scope, listService) {
 
 ## service的注入与使用
 
-对service的合理利用可以实现前台数据与页面(model and view)的分离，进而可以实现js代码的充分复用，不需要专门写DOM处理的脚本。因此前期设计<ul>后期突然
-编程<table>的蛋疼情形就无需担心了。
+对service的合理利用可以实现前台数据与页面(model and view)的分离，进而可以实现js代码的充分复用，不需要专门写DOM处理的脚本。因此前期设计`<ul>`后期突然
+编程`<table>`的蛋疼情形就无需担心了。
 
 使用一个简单例子：
 
