@@ -79,6 +79,8 @@ follow:
     url: http://github.com/wengshengyuan
   - class: icon-envelope
     url: mailto:18600647615@163.com
+  - class: icon-qq
+    url: tencent://message/?uin=422142843&site
 
 #Links
 customLinks:
