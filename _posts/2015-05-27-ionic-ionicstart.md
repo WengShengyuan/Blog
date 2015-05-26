@@ -7,3 +7,6 @@ category: ionic
 
 
 在路上~
+
+## 参考资料
+[ionic doc](http://www.ionicframework.com/docs/) <- 官方
