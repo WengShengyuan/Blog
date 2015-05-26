@@ -5,6 +5,8 @@ comments: true
 category: angularjs
 ---
 
+
+
 相关项目:[AngularJsPractice](https://github.com/WengShengyuan/angularjsPractice)
 
 对于angularjs的MVC结构主要依赖注入。下文已controller以及service注入为例说明。
@@ -62,7 +64,7 @@ indexApp.controller('IndexController', function($scope, listService) {
 	<li ng-repeat="item in list">hello \{\{item.name}} you are \{\{item.gender}} and \{\{item.age}} years old</li>
 </ul>
 
-````
+```
 
 ### 2、声明service
 
@@ -107,3 +109,9 @@ $scope.addOneServiceTrigger = function() {
 };
 
 ```
+
+调用方法如上所示。
+
+## 将service模块化
+
+将某些特定功能的service集合归纳集中入一个js文件中，作为模块引入。（待完成。）
