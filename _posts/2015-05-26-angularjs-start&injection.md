@@ -9,6 +9,8 @@ category: angularjs
 
 对于angularjs的MVC结构主要依赖注入。下文已controller以及service注入为例说明。
 
+*代码中的$scope, $http*本身也是注入形式引入的。它们是AngularJs自身封装的对象。
+
 ## controller
 
 相比于网上常常看到的教程，新版AngularJs(1.3.x)以后对于controller声明有一些限制。
