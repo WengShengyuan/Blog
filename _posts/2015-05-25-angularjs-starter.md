@@ -242,3 +242,5 @@ indexApp.controller('IndexController',function($scope) {
 [AngularJs中文社区](http://angularjs.cn/T008)
 
 [汇智网自学教程](http://www.hubwiz.com/coursecenter)
+
+[AngularJs教程](http://www.yiibai.com/angularjs/)
