@@ -1,6 +1,6 @@
 ---
 layout: default
-title: angularjs起步服务于controller注入
+title: service与controller注入
 comments: true
 category: angularjs
 ---
@@ -14,12 +14,26 @@ category: angularjs
 相比于网上常常看到的教程，新版AngularJs(1.3.x)以后对于controller声明有一些限制。
 
 ```javascript
+
+function IndexController($scope) {
+	//controller code
+}
+
 ```
 
 这种方法已经不允许，取而代之的是如下声明方法：
 
 ```javascript
-```javascript
+
+//声明模块
+var indexApp = angular.module('indexApp', []);
+
+// 声明controller
+indexApp.controller('IndexController', function($scope, listService) {
+	//controller code
+}
+
+```
 
 大致流程：
 
