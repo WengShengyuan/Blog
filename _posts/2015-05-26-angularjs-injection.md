@@ -61,7 +61,7 @@ indexApp.controller('IndexController', function($scope, listService) {
 ```HTML
 
 <ul>
-	<li ng-repeat="item in list">hello \{\{item.name}} you are \{\{item.gender}} and \{\{item.age}} years old</li>
+	<li ng-repeat="item in list">hello `{{item.name}}` you are \{\{item.gender}} and \{\{item.age}} years old</li>
 </ul>
 
 ```
