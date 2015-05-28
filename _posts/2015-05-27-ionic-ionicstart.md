@@ -6,7 +6,7 @@ category: ionic
 ---
 
 
-##安装ionic相关环境
+## 安装ionic相关环境
 
 ### 1、安装node.js
 
@@ -26,11 +26,19 @@ category: ionic
 
 `ionic setup sass`
 
-### 4、下载模板生成工程
+## 新建一个工程
+
+
+### 1、下载工程模板(sidemenu为例)
 
 命令行安装： 
 
 `ionic start myApp sidemenu`
+
+会生成一个myApp目录。里边是原始工程文件。另外www文件夹下有可以直接作为web使用的工程文件夹。直接放入tomcat就可以运行了。
+
+
+### 2、加入开发平台(Android)
 
 进入目录
 
@@ -42,7 +50,29 @@ category: ionic
 
 此时platforms文件夹下多出对应平台的项目文件夹了。
 
-另外www文件夹下有可以直接作为web使用的工程文件夹。直接放入tomcat就可以运行了。
+### 3、添加cordova插件
+
+这里已camera, barcodescanner为例。
+
+*注意！：如果是想拷贝项目文件夹出来另外导入android工程进行开发的话，最好在真正开始开发前就引用好插件，因为引用插件会对java, js,配置文件等进行多处修改，所以不建议中途增加插件。除非用node.js直接在工作工程目录中自动添加插件*
+
+命令行方式添加插件：
+
+`cordova plugin add cordova-plugin-camera`
+
+`cordova plugin add https://github.com/wildabeast/BarcodeScanner.git`
+
+*附：barcodescanner 插件通过Git下载，需要系统中有git插件*
+
+Git的安装步骤如下:
+
+1. `npm install -g git`
+
+2. 安装Git软件， 并设置PATH环境变量 `C://Program Files//Git//bin` (假设)
+
+## 开发
+
+
 
 
 
