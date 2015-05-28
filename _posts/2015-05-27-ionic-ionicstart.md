@@ -6,6 +6,9 @@ category: ionic
 ---
 
 
+改博文的实际练习项目请见： [angularjsPractice](https://github.com/WengShengyuan/angularjsPractice.git) 
+
+
 ## 安装ionic相关环境
 
 ### 1、安装node.js
