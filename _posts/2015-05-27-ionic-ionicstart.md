@@ -6,7 +6,7 @@ category: ionic
 ---
 
 
-改博文的实际练习项目请见： [angularjsPractice](https://github.com/WengShengyuan/angularjsPractice.git) 
+该博文的实际练习项目请见： [angularjsPractice](https://github.com/WengShengyuan/angularjsPractice.git) 
 
 
 ## 安装ionic相关环境
@@ -55,7 +55,7 @@ category: ionic
 
 ### 3、添加cordova插件
 
-这里已camera, barcodescanner为例。
+这里以camera, barcodescanner为例。
 
 *注意！：如果是想拷贝项目文件夹出来另外导入android工程进行开发的话，最好在真正开始开发前就引用好插件，因为引用插件会对java, js,配置文件等进行多处修改，所以不建议中途增加插件。除非用node.js直接在工作工程目录中自动添加插件*
 
@@ -87,7 +87,7 @@ Git的安装步骤如下:
 
 * assets/www 文件夹下是本地WEB工程（已加入cordova特性），因此不能直接用来作为WEB服务。
 
-* assets/www/lib 文件夹用于存放公共库文件，ionic为自动加入；ng-cordova为后期导入。
+* assets/www/lib 文件夹用于存放公共库文件，ionic为自动加入；ng-cordova为后期导入(注意：ng-cordova的引用应该在cordova之前)。
 
 * assets/www/templates 文件夹用于存放html页面片段
 
