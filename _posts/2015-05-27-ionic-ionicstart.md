@@ -72,6 +72,35 @@ Git的安装步骤如下:
 
 ## 开发
 
+### 原始项目结构
+
+如下图所示：
+
+![folder]({{site.baseurl}}/images/post_images/2015-05-27-ionic-ionicstart/folder.png)
+
+其中：
+
+* src/com（org） 下边是java相关原声Android代码（Activity，以及插件的配合Activity），无需自己写，node.js自动导入。
+
+* assets/www 文件夹下是本地WEB工程（已加入cordova特性），因此不能直接用来作为WEB服务。
+
+* assets/www/lib 文件夹用于存放公共库文件，ionic为自动加入；ng-cordova为后期导入。
+
+* assets/www/templates 文件夹用于存放html页面片段
+
+### 关键js脚本
+
+#### 1。app.js
+
+整个APP的主模块，其余的controller, services模块在这里注入。同时，该模块声明了前端路由。
+
+
+#### 2、controllers.js 以及  services.js
+
+可以自行声明，并根据后期模块的增加继续拆封。合理的声明与设计controllers, services的代码是AngularJs 作为MVC框架的精髓。写得好的话可以极大的精简代码以及实现更好的代码复用。
+
+
+
 
 
 
