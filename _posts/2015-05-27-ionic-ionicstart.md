@@ -79,7 +79,7 @@ Git的安装步骤如下:
 
 如下图所示：
 
-![folder]({{site.baseurl}}/images/post_images/2015-05-27-ionic-ionicstart/folder.png)
+![folder]({{site.baseurl}}/images/post_images/2015-05-27-ionic-ionicstart/folder.jpg)
 
 其中：
 
