@@ -5,7 +5,7 @@ comments: true
 category: angularjs
 ---
 
-该博文的实际练习项目请见： [angularjsPractice](https://github.com/WengShengyuan/angularjsPractice.git) 
+该博文的实际练习项目请见：  [ionicApp](https://github.com/WengShengyuan/ionicApp) 
 
 其中的 assets/www/app.js 中定义了路由。
 
