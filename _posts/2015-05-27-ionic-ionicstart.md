@@ -136,7 +136,7 @@ Git的安装步骤如下:
 
 1. 错误代码: cordova-plugin-file / www / android / FileErrors.js
 
-2. 文件位置: cordova-plugin-file / www / android / fileSystemPaths.js(一般使用外置存储中对应APP目录下的data文件夹比较好.*externalDataDirectory*)
+2. 文件位置: cordova-plugin-file / www / android / fileSystemPaths.js(一般使用外置存储中对应APP目录下的data文件夹比较好.*externalDataDirectory* 对应目录/sdcard/Android/appName/files)
 
 
 ## 参考资料
