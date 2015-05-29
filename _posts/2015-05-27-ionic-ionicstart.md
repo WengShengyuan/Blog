@@ -6,7 +6,7 @@ category: ionic
 ---
 
 
-该博文的实际练习项目请见： [angularjsPractice](https://github.com/WengShengyuan/angularjsPractice.git) 
+该博文的实际练习项目请见： [ionicApp](https://github.com/WengShengyuan/ionicApp) 
 
 
 ## 安装ionic相关环境
