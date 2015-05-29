@@ -103,9 +103,40 @@ Git的安装步骤如下:
 可以自行声明，并根据后期模块的增加继续拆封。合理的声明与设计controllers, services的代码是AngularJs 作为MVC框架的精髓。写得好的话可以极大的精简代码以及实现更好的代码复用。
 
 
+## 常用插件以及注意事项
+
+### camera
+
+`cordova plugin add cordova-plugin-camera`
+
+[plugins/camera](ngcordova.com/docs/plugins/camera)
 
 
+### barcode
 
+`cordova plugin add https://github.com/wildabeast/BarcodeScanner.git`
+
+[plugins/barcode scanner](ngcordova.com/docs/plugins/barcodeScanner)
+
+*注意需要配置Git*
+
+### Dialogs
+
+`cordova plugin add cordova-plugin-dialogs`
+
+[plugins/Dialogs](ngcordova.com/docs/plugins/dialogs)
+
+*注意，打包成服务使用有问题，会跳过询问窗口，直接执行下一条语句。因此目前先直接在需要用的地方调用$cordovaDialogs比较好*
+
+### file
+
+`cordova plugin add cordova-plugin-file`
+
+*注意一些常用的常数*
+
+1. 错误代码: cordova-plugin-file / www / android / FileErrors.js
+
+2. 文件位置: cordova-plugin-file / www / android / fileSystemPaths.js(一般使用外置存储中对应APP目录下的data文件夹比较好.*externalDataDirectory*)
 
 
 ## 参考资料
