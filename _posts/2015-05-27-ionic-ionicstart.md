@@ -93,7 +93,7 @@ Git的安装步骤如下:
 
 ### 关键js脚本
 
-#### 1。app.js
+#### 1、app.js
 
 整个APP的主模块，其余的controller, services模块在这里注入。同时，该模块声明了前端路由。
 
