@@ -132,6 +132,12 @@ Git的安装步骤如下:
 
 `cordova plugin add cordova-plugin-file`
 
+### fileTransfer
+
+`cordova plugin add cordova-plugin-file-transfer`
+
+[plugins/fileTransfer](http://ngcordova.com/docs/plugins/fileTransfer/)
+
 *注意一些常用的常数*
 
 1. 错误代码: cordova-plugin-file / www / android / FileErrors.js
