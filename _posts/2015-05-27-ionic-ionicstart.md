@@ -128,15 +128,15 @@ Git的安装步骤如下:
 
 *注意，打包成服务使用有问题，会跳过询问窗口，直接执行下一条语句。因此目前先直接在需要用的地方调用$cordovaDialogs比较好*
 
-### file
-
-`cordova plugin add cordova-plugin-file`
-
 ### fileTransfer
 
 `cordova plugin add cordova-plugin-file-transfer`
 
 [plugins/fileTransfer](http://ngcordova.com/docs/plugins/fileTransfer/)
+
+### file
+
+`cordova plugin add cordova-plugin-file`
 
 *注意一些常用的常数*
 
