@@ -197,3 +197,18 @@ w.clicked=function(id,wa,ns){
 
 推荐阅读:[DCloud文档](http://ask.dcloud.net.cn/docs/) 左侧目录下的“提升HTML5的性能体验系列”
 
+比较直接的办法就是预载，即将HTML页面的内容放入webView中， 在使用的时候show出来。
+
+```javascript
+
+var contentView;
+//为了不遮住上下固定栏
+var contentStyles = {top: '9%', bottom: '10%'};
+//预载
+contentView = plus.webview.create(homeUrl,'contentView',contentStyles);
+
+//显示
+contentView.show();
+
+```
+
