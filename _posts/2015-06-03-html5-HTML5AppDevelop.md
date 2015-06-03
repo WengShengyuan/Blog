@@ -5,6 +5,11 @@ comments: true
 category: HTML5+
 ---
 
+
+
+项目参考[H5PlusApp](https://github.com/WengShengyuan/H5PlusApp)
+
+
 ## 组件介绍
 
 Dcloud HTML5+App开发套件分为三个部分： HBuilderIDE， 5+App， MUI框架三个部分。
