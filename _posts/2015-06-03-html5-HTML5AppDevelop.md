@@ -192,3 +192,8 @@ w.clicked=function(id,wa,ns){
 
 ```
 
+
+#### 3、页面跳转的优化
+
+推荐阅读:[DCloud文档](http://ask.dcloud.net.cn/docs/) 左侧目录下的“提升HTML5的性能体验系列”
+
