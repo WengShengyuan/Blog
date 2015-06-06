@@ -208,7 +208,7 @@ w.clicked=function(id,wa,ns){
 
 var contentView;
 //为了不遮住上下固定栏
-var contentStyles = {top: '9%', bottom: '10%'};
+var contentStyles = {top: '44px', bottom: '50px'};
 //预载
 contentView = plus.webview.create(homeUrl,'contentView',contentStyles);
 
