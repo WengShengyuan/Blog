@@ -18,18 +18,18 @@ category: java
 
 主要还是用MAVEN构建项目，引入了几个基础包：
 
-* 1. apache httpclient - 用于处理HTML请求
+1. apache httpclient - 用于处理HTML请求
 
-* 2. jsoup - 用于处理HTML页面文档
+2. jsoup - 用于处理HTML页面文档
 
-* 3. mysql-connector-java + c3p0 - 用于连接数据库
+3. mysql-connector-java + c3p0 - 用于连接数据库
 
 
 ## 项目主要设计
 
 ### 单例模式URL管理
 
-由于在查询某一搜索条件的结果页的时候，往往遇到分页的情况，所以需要动态添加更多的URL，需要将URL设计成一个公共的资源。
+由于在查询某一搜索条件的结果页的时候，往往遇到分页的情况*需要分析当前结果页是否有分页，如果有则添加所有分页的URL，留着后期处理*，因此要将URL设计成一个公共的资源。
 
 目前该项目爬虫为单一线程，但是为了后期扩展成多线程模式，要让所有爬虫能访问URL列表资源，并且能动态添加URL记录，就应该考虑
 到同步的问题。因此，将URL资源设计成单例模式管理。代码如下（核心是stack，同步锁暂未添加）：
@@ -53,6 +53,7 @@ public class URLPool {
 		return Instance;
 	}
 	
+	//批量添加URL
 	public void batchPush(List<String> URLS){
 		for(String URL : URLS){
 			if(!stack.contains(URL)){
@@ -61,16 +62,19 @@ public class URLPool {
 		}
 	}
 	
+	//添加URL
 	public void pushURL(String URL){
 		if(!stack.contains(URL)){
 			stack.push(URL);
 		}
 	}
 	
+	//是否有更多URL
 	public boolean hasNext(){
 		return !(stack.isEmpty());
 	}
 	
+	//弹出一个URL
 	public String popURL(){
 		if(hasNext()){
 			return stack.pop();
