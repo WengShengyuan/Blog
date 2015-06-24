@@ -185,4 +185,40 @@ public class HttpHeader {
 
 ## 抓取结果及简单统计
 
-(待完成)
+### 原始数据
+
+由程序抓取的记录存储在MySQL中。
+
+![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/datatable.jpg)
+
+
+### EXCEL简单透视
+
+通过简单EXCEL透视图表可以得到一些直观的数据，没有做深入挖掘，尝试了几个参数的组合。
+
+#### 房屋修建时间分布
+
+![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/timecount.jpg)
+
+#### 区域在售房屋数量分布
+
+![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/regioncount.jpg)
+
+#### 区域平米售价
+
+![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/regionpersquare.jpg)
+
+#### 楼型分布
+
+![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/typecount.jpg)
+
+#### 区域在售房屋平均面积
+
+![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/regionsquare.jpg)
+
+
+
+.....
+
+啥也不说了，搬砖去了，呵呵呵呵呵呵呵。。。。。。。。。。。。
+
