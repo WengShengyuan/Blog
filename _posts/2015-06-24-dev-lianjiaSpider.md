@@ -196,6 +196,8 @@ public class HttpHeader {
 
 通过简单EXCEL透视图表可以得到一些直观的数据，没有做深入挖掘，尝试了几个参数的组合。
 
+查询条件：海淀、朝阳的三居室二手房。
+
 #### 房屋修建时间分布
 
 ![]({{site.baseurl}}/images/post_images/2015-06-24-dev-lianjiaSpider/timecount.jpg)
