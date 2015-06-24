@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 链家地产爬虫实验以及二手房信息统计概览
+title: 链家地产页面抓取实验以及二手房信息统计概览
 comments: true
 category: java
 ---
