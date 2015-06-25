@@ -5,16 +5,12 @@ comments: true
 category: java
 ---
 
-	<div id="51la">
-     	<!-- 51.la -->
         <script type="text/javascript" src="http://js.users.51.la/17847975.js"></script>
 		<noscript>
 			<a href="http://www.51.la/?17847975" target="_blank">
 				<img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/17847975.asp" style="border:none" />
 			</a>
 		</noscript>
-        <!-- 51.la -->
-    </div>
 
 
 项目参考：[LianJiaSpider](https://github.com/WengShengyuan/LianJiaSpider)
