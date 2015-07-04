@@ -26,7 +26,7 @@ category: dev
 以前刚接触Thymeleaf标签的是否，感觉这货还是挺牛逼的，于是神马页面都用Thymeleaf解决了，JS神马的都不要写。写出来的HTML和JAVA是这样的：
 
 
-*此处有图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/thymeleaf.jpg)
 
 
 但是后来慢慢就感觉到这货的局限性太强：
@@ -61,15 +61,15 @@ category: dev
 
 以前用Javascript获取后台数据，然后动态填充页面的时候是这样的：
 
-*此处由图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/jsDOM.jpg)
 
 从复杂的页面结构中提取数据的时候脚本是这样的：
 
-*此处由图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/jsGetParam.jpg)
 
 有时页面操作逻辑多，函数没有归类分割到不同js时，函数堆积如山时，找一个函数都得费半天劲。
 
-*此处有图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/functionPile.jpg)
 
 所以一旦美工把页面改了，那这些代码几乎就要废了重写，有种想把美工按在水里的赶脚！
 
@@ -77,15 +77,15 @@ category: dev
 
 于是，页面只需一次加工，做好标记，如下：
 
-*此处有图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/ng-x.jpg)
 
 将数据获取、处理的逻辑写在Service中：
 
-*此处有图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/jsserver.jpg)
 
 将页面操作函数写在Controller中：
 
-*此处有图*
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/jsctrl.jpg)
 
 经过以上三步，页面函数的定义、数据的获取、数据与页面的绑定已经完成。修改数据，页面会跟着改变；修改页面数据的值，后台数据也会跟着改变，简直完美有木有！完全不需要声明事件，然后再去HTML中找值有木有！！
 而且合理用好MVC结构，可以将同类业务的Service单独分离出来，在可能调用的地方单独引入，完美的代码复用有木有！AngularJS的Directive也十分牛逼，但是我赶脚上边的几个特性已经足够满足目前的开发需求了。
@@ -141,24 +141,4 @@ public class Article{
 ```
 
 这样，就可以直接使用`Article.isTimeValid()`直接获取该文章是否在有效期内了。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
