@@ -28,6 +28,8 @@ category: dev
 
 ![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/thymeleaf.jpg)
 
+![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/javamodel.jpg)
+
 
 但是后来慢慢就感觉到这货的局限性太强：
 
