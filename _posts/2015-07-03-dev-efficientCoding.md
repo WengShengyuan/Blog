@@ -41,7 +41,7 @@ category: dev
 
 * 对页面数据的获取最终还是得写JS。
 
-* 美工该页面了，就得在美工新页面的基础上重新填上Thymeleaf标签。
+* 美工改页面了，就得在美工新页面的基础上重新填上Thymeleaf标签。
 
 将页面与数据的处理分离，可以解决部分问题。
 前端页面与数据分离的主要做法：在用户发起HTTP请求后，并不需要等待业务、数据处理结束后才将数据与页面一同返回回来。而是立即返回静态，或仅包含少量必要数据的页面，然后再由AJAX请求复杂业务处理请求，异步方式加载到页面中。
@@ -89,12 +89,14 @@ category: dev
 
 ![]({{site.baseurl}}/images/post_images/2015-07-03-dev-efficientCoding/jsctrl.jpg)
 
-经过以上三步，页面函数的定义、数据的获取、数据与页面的绑定已经完成。修改数据，页面会跟着改变；修改页面数据的值，后台数据也会跟着改变，简直完美有木有！完全不需要声明事件，然后再去HTML中找值有木有！！
+经过以上三步，页面函数的定义、数据的获取、数据与页面的绑定已经完成。
+
+`$scop`中的变量回自动与HTML中的`{{}}`以及`<ng-model>`中的变量自动绑定，修改数据，页面会跟着改变；修改页面数据的值，后台数据也会跟着改变，简直完美有木有！完全不需要声明事件，然后再去HTML中找值有木有！！
 而且合理用好MVC结构，可以将同类业务的Service单独分离出来，在可能调用的地方单独引入，完美的代码复用有木有！
 
 AngularJS的Directive也十分牛逼，但是我赶脚上边的几个特性已经足够满足目前的开发需求了。
 
-有了AngularJS，无论美工怎么改页面，从ul列表改成table，再改成div，甚至改成ui嵌套div再嵌套table，我都不需要改变后边的JS，工作量一下少了不少有木有。
+有了AngularJS，无论美工怎么改页面，从ul列表改成table，再改成div，甚至改成ul嵌套div再嵌套table，我都不需要改变后边的JS，工作量一下少了不少有木有。
 
 ## 需求模糊时候的处理
 
@@ -134,7 +136,7 @@ public class Article{
 	private Date startDate;
 	private Date endDate;
 	
-	public isTimeValid(){
+	public boolean isTimeValid(){
 	
 		Date now = new Date();
 		return ((now.getTime() > startDate.getTime()  &&  (now.getTime() < endDate.getTime())));
