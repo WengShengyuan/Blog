@@ -117,7 +117,7 @@ safe: false
 highlighter: pygments
 title: 嗡汤圆
 description: 嗡汤圆的迷你博客V2.0
-theme: kunka
+theme: hack
 disqusname: wengshengyuan
 
 
