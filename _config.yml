@@ -73,8 +73,8 @@ author:
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
-  - class: icon-weibo
-    url: http://weibo.com/wengshengyuan
+#  - class: icon-weibo
+#    url: http://weibo.com/wengshengyuan
   - class: icon-github-alt
     url: http://github.com/wengshengyuan
   - class: icon-envelope
