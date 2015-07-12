@@ -8,9 +8,9 @@ category: java
 
 在SpringMVC搭建的服务器中，可能会在后台定时跑一些队列处理任务，这里根据网络参考资料提供两种思路：
 
-*@scheduled注解实现
+* @scheduled注解实现
 
-*Quartz整合实现
+* Quartz整合实现
 
 ## 注解实现
 
