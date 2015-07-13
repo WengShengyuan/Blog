@@ -52,7 +52,7 @@ public class Singleton() {
 		//init method
 	}
 	
-	public static getInstance() {
+	public static Singleton getInstance() {
 		if(instance == null){
 			instance = new Singleton();
 		}
@@ -95,7 +95,7 @@ public class Singleton {
 		//init method
 	}
 	
-	public static getInstance() {
+	public static Singleton getInstance() {
 		return instance;
 	}
 }
@@ -109,13 +109,14 @@ public class Singleton {
 ```java
 
 public class Singleton {
+
 	private volatile static Singleton instance;
 	
 	private Singleton() {
 		//init method
 	}
 	
-	public static getInstance() {
+	public static Singleton getInstance() {
 		if(instance == null){
 			synchronized (Singleton.class) {
 				if (instance == null ){
