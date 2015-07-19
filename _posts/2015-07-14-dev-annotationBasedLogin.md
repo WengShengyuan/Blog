@@ -129,7 +129,7 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
         	<mvc:mapping path="/test/number.do"/>  
         	<!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->  
         	<bean class="com.host.app.web.interceptor.LoginInterceptor"/>  
-    	    </mvc:interceptor>  
+	    </mvc:interceptor>  
 	</mvc:interceptors>
 
 ```
