@@ -107,14 +107,29 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 
 ### 1.3 配置拦截器
 
+参考博客:[SpringMVC中使用Interceptor拦截器](http://haohaoxuexi.iteye.com/blog/1750680)
+
 在`springContext-servlet.xml`中插入拦截器包配置
 
 ```xml
+
+	<!-- 第一种拦截属于全局拦截，即在mvc:interceptors下直接声明bean -->
 
 	<!-- 拦截权限验证 -->
 	<mvc:interceptors>  
 	    <!-- 如果不定义 mvc:mapping path 将拦截所有的URL请求 -->
 	    <bean class="org.company.core.custominterceptor.AuthInterceptor"></bean>
+	</mvc:interceptors>
+	
+	
+	<!-- 第二种拦截是带路径信息的拦截，即在mvc:interceptors下单独声明interceptor并加上mvc:mapping，bean参数 -->
+	<!-- 拦截权限验证 -->
+	<mvc:interceptors>  
+	    <mvc:interceptor>  
+        	<mvc:mapping path="/test/number.do"/>  
+        	<!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->  
+        	<bean class="com.host.app.web.interceptor.LoginInterceptor"/>  
+    	    </mvc:interceptor>  
 	</mvc:interceptors>
 
 ```
