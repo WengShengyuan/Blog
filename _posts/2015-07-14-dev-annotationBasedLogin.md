@@ -122,13 +122,17 @@ public class AuthInterceptor extends HandlerInterceptorAdapter {
 	</mvc:interceptors>
 	
 	
-	<!-- 第二种拦截是带路径信息的拦截，即在mvc:interceptors下单独声明interceptor并加上mvc:mapping，bean参数 -->
+	<!-- 第二种拦截是带路径信息的拦截，即在mvc:interceptors下单独声明interceptor并加上mvc:mapping，bean参数，这样可以避免
+	资源、脚本等被拦截从而导致页面验证失败-->
 	<!-- 拦截权限验证 -->
 	<mvc:interceptors>  
 	    <mvc:interceptor>  
-        	<mvc:mapping path="/test/number.do"/>  
+	    	<!-- 被拦截的路径 -->
+        	<mvc:mapping path="/**"/>
+        	<!-- 不被拦截的路径 -->
+        	<mvc:exclude-mapping path = "/resources/**" />
         	<!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->  
-        	<bean class="com.host.app.web.interceptor.LoginInterceptor"/>  
+        	<bean class="org.company.core.custominterceptor.AuthInterceptor"/>  
 	    </mvc:interceptor>  
 	</mvc:interceptors>
 
