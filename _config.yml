@@ -116,8 +116,8 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: 嗡汤圆
-description: *东学学，西抄抄，老老实实敲代码*
-theme: time-machine
+description: 东学学，西抄抄，老老实实敲代码
+theme: midnight
 disqusname: wengshengyuan
 
 
