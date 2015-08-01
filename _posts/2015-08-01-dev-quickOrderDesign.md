@@ -26,7 +26,11 @@ category: java
 
 * 在开发过程中，若增加一个状态、修改一个业务逻辑的起止状态需要大量的代码修改，极易造成业务逻辑处理错误。
 
-这里简要以订单表为例（明细、物流、退货退款等表格略）。
+这里简要以订单表为例（明细、物流、退货退款等表格略）。假设订单有以下几种状态，状态间有箭头则表示
+允许通过业务操作转换状态，否则不允许。
+
+![]({{site.baseurl}}/images/post_images/2015-08-01-dev-quickOrderDesign/order.jpg)
+
 
 ## 2 总体设计
 
@@ -200,6 +204,16 @@ List<Entity> result = entityDao.queryByStringEqualMap(map.getMap());
 
 * 1.从数据库中查询数据实体Entity，包装成实体包装Wrapper，并根据实体数据设置状态State。
 * 2.对实体的业务操作通过包装操作，而包装通过当前状态类的具体业务操作代码实现。(Wrapper -> state -> doSth))
+
+如图所示：
+
+原Controller - Service - Dao 模式：
+
+![]({{site.baseurl}}/images/post_images/2015-08-01-dev-quickOrderDesign/CSDPattern.jpg)
+
+嵌入State Pattern Design的状态模式：
+
+![]({{site.baseurl}}/images/post_images/2015-08-01-dev-quickOrderDesign/stateDesign.jpg)
 
 代码结构如下：
 
