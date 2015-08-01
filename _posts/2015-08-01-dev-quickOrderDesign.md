@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JPA下利于快速开发、灵活变化的表查询及业务处理程序结构设计
+title: JPA下利于快速开发、快速调整业务的程序结构设计
 comments: true
 category: java
 ---
