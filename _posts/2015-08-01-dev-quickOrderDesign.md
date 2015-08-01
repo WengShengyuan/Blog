@@ -330,19 +330,6 @@ public class OrderProductWrapper {
 		setCurrentState();
 	}
 	
-	public OrderProductWrapper(OrderProduct order, List<OrderPdetail> details) {
-		this.order = order;
-		this.details = details;
-		
-		canceled = new Canceled(this);
-		offlineNew = new OfflineNew(this);
-		rejected = new Rejected(this);
-		shiftConfirm = new ShiftConfirm(this);
-		shifting = new Shifting(this);
-		
-		setCurrentState();
-	}
-	
 	/**
 	 * 拒单
 	 * @param user
