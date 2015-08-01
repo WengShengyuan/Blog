@@ -116,7 +116,7 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: 嗡汤圆
-description: 嗡汤圆的迷你博客V2.0
+description: *东学学，西抄抄，老老实实敲代码*
 theme: midnight
 disqusname: wengshengyuan
 
