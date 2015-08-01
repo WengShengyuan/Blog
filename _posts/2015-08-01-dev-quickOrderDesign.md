@@ -1,52 +1,52 @@
 ---
 layout: default
-title: JPAÏÂÀûÓÚ¿ìËÙ¿ª·¢¡¢Áé»î±ä»¯µÄ±í²éÑ¯¼°ÒµÎñ´¦Àí³ÌĞò½á¹¹Éè¼Æ
+title: JPAä¸‹åˆ©äºå¿«é€Ÿå¼€å‘ã€çµæ´»å˜åŒ–çš„è¡¨æŸ¥è¯¢åŠä¸šåŠ¡å¤„ç†ç¨‹åºç»“æ„è®¾è®¡
 comments: true
 category: java
 ---
 
 
-*Ö÷ÒªÊ¹ÓÃ³¡¾°£ºÊµÌå¾ßÓĞ¶àÖÖ×´Ì¬£¬×´Ì¬×ª»»Â·¾¶¶à£¬×´Ì¬×ª»»ÒµÎñ´¦ÀíÏà¶Ô¸´ÔÓ*
+*ä¸»è¦ä½¿ç”¨åœºæ™¯ï¼šå®ä½“å…·æœ‰å¤šç§çŠ¶æ€ï¼ŒçŠ¶æ€è½¬æ¢è·¯å¾„å¤šï¼ŒçŠ¶æ€è½¬æ¢ä¸šåŠ¡å¤„ç†ç›¸å¯¹å¤æ‚*
 
 
-## 1 ÊÊÓÃ³¡¾°
+## 1 é€‚ç”¨åœºæ™¯
 
-µäĞÍµÄÊ¹ÓÃ³¡¾°¼´¶©µ¥´¦Àí³¡¾°¡£
-ÔÚÓÃ»§´Ó¹ºÂòÉÌÆ·£¬ÉÌ»§´¦Àí¶©µ¥£¬·¢»õ£¬ÎïÁ÷ÅäËÍ£¬ÓÃ»§ÊÕ»õ£¬ÓÃ»§È·ÈÏ£¬ÓÃ»§ÍË»õ\ÍË¿î£¬ÉÌ»§ÍË¿î£¬½»Ò×¹Ø±ÕµÈµÈÒ»ÏµÁĞÁ÷³ÌÖĞ£¬¶©µ¥»áÔÚ²»Í¬½×¶Î±íÏÖÎª²»Í¬µÄ×´Ì¬¡£
-¶øÕâĞ©×´Ì¬ÓÃ¶©µ¥ÊµÌå±¾ÉíµÄÒ»¸ö»òÕß¶à¸ö×Ö¶Î²»Í¬ÖµµÄ×éºÏÀ´±íÊ¾¡£
+å…¸å‹çš„ä½¿ç”¨åœºæ™¯å³è®¢å•å¤„ç†åœºæ™¯ã€‚
+åœ¨ç”¨æˆ·ä»è´­ä¹°å•†å“ï¼Œå•†æˆ·å¤„ç†è®¢å•ï¼Œå‘è´§ï¼Œç‰©æµé…é€ï¼Œç”¨æˆ·æ”¶è´§ï¼Œç”¨æˆ·ç¡®è®¤ï¼Œç”¨æˆ·é€€è´§\é€€æ¬¾ï¼Œå•†æˆ·é€€æ¬¾ï¼Œäº¤æ˜“å…³é—­ç­‰ç­‰ä¸€ç³»åˆ—æµç¨‹ä¸­ï¼Œè®¢å•ä¼šåœ¨ä¸åŒé˜¶æ®µè¡¨ç°ä¸ºä¸åŒçš„çŠ¶æ€ã€‚
+è€Œè¿™äº›çŠ¶æ€ç”¨è®¢å•å®ä½“æœ¬èº«çš„ä¸€ä¸ªæˆ–è€…å¤šä¸ªå­—æ®µä¸åŒå€¼çš„ç»„åˆæ¥è¡¨ç¤ºã€‚
 
 
-Èç¹ûÔÚÒµÎñ´¦ÀíÊ±Í¨¹ı¼òµ¥µÄ£º²éÑ¯ÊµÌå -> ĞŞ¸ÄËùÓĞÏà¹Ø×Ö¶Î -> ±£´æ£¬ÕâÑùÊµÏÖÒµÎñÂß¼­´¦ÀíÒÔ¼°Êı¾İ¸üĞÂµÄ»°£¬ÓĞÈçÏÂÈ±µã£º
+å¦‚æœåœ¨ä¸šåŠ¡å¤„ç†æ—¶é€šè¿‡ç®€å•çš„ï¼šæŸ¥è¯¢å®ä½“ -> ä¿®æ”¹æ‰€æœ‰ç›¸å…³å­—æ®µ -> ä¿å­˜ï¼Œè¿™æ ·å®ç°ä¸šåŠ¡é€»è¾‘å¤„ç†ä»¥åŠæ•°æ®æ›´æ–°çš„è¯ï¼Œæœ‰å¦‚ä¸‹ç¼ºç‚¹ï¼š
 
-* ²éÑ¯Ã¿Ò»ÖÖ×´Ì¬µÄÊµÌåÁĞ±íĞèÒª¼Ç×¡ËùÓĞµÄ¹Ø¼ü×Ö¶Î×éºÏ£¬Èç¹ûĞ´´í¾Í»áÔì³É²éÑ¯½á¹û²»×¼È·£¬²¢ÇÒÄÑÒÔ·¢ÏÖ¡£
+* æŸ¥è¯¢æ¯ä¸€ç§çŠ¶æ€çš„å®ä½“åˆ—è¡¨éœ€è¦è®°ä½æ‰€æœ‰çš„å…³é”®å­—æ®µç»„åˆï¼Œå¦‚æœå†™é”™å°±ä¼šé€ æˆæŸ¥è¯¢ç»“æœä¸å‡†ç¡®ï¼Œå¹¶ä¸”éš¾ä»¥å‘ç°ã€‚
 
-* ºÜÈİÒ×ÒòÊèºöÔì³É´úÂë´íÎó£¬±ÈÈç£ºÂ©¸ÄÒ»¸ö×Ö¶Î£¬¸Ä´í×´Ì¬ÂëµÈµÈ¡£
+* å¾ˆå®¹æ˜“å› ç–å¿½é€ æˆä»£ç é”™è¯¯ï¼Œæ¯”å¦‚ï¼šæ¼æ”¹ä¸€ä¸ªå­—æ®µï¼Œæ”¹é”™çŠ¶æ€ç ç­‰ç­‰ã€‚
 
-* Ã¿Ò»ÏîÒµÎñÁ÷³Ì´¦ÀíµÄ¿ªÊ¼×´Ì¬ºÍ½áÊø×´Ì¬²»¿É¿Ø£¬±ÈÈç£ºÓÃ»§ĞÂÌá½»¶©µ¥ÊÇ²»¿ÉÒÔ±»Ö±½Ó¹Ø±Õ½»Ò×µÄ£¬Èç¹ûĞèÒªÊµÏÖÕâÒ»Ô¼Êø£¬¾ÍÓ¦¸ÃÔÚ¹Ø±Õ½»Ò×µÄÒµÎñ´úÂëÖĞÌØ±ğÉùÃ÷¡£Èô×´Ì¬ºÜ¶à£¬ÒµÎñ´¦ÀíÂß¼­ºÜ¶àµÄÇé¿öÏÂ£¬ºÜÈİÒ×ÒÅÂ©Ô¼Êø£¬Ôì³ÉÒµÎñÂß¼­´¦Àí´íÎó¡£
+* æ¯ä¸€é¡¹ä¸šåŠ¡æµç¨‹å¤„ç†çš„å¼€å§‹çŠ¶æ€å’Œç»“æŸçŠ¶æ€ä¸å¯æ§ï¼Œæ¯”å¦‚ï¼šç”¨æˆ·æ–°æäº¤è®¢å•æ˜¯ä¸å¯ä»¥è¢«ç›´æ¥å…³é—­äº¤æ˜“çš„ï¼Œå¦‚æœéœ€è¦å®ç°è¿™ä¸€çº¦æŸï¼Œå°±åº”è¯¥åœ¨å…³é—­äº¤æ˜“çš„ä¸šåŠ¡ä»£ç ä¸­ç‰¹åˆ«å£°æ˜ã€‚è‹¥çŠ¶æ€å¾ˆå¤šï¼Œä¸šåŠ¡å¤„ç†é€»è¾‘å¾ˆå¤šçš„æƒ…å†µä¸‹ï¼Œå¾ˆå®¹æ˜“é—æ¼çº¦æŸï¼Œé€ æˆä¸šåŠ¡é€»è¾‘å¤„ç†é”™è¯¯ã€‚
 
-* ÔÚ¿ª·¢¹ı³ÌÖĞ£¬ÈôÔö¼ÓÒ»¸ö×´Ì¬¡¢ĞŞ¸ÄÒ»¸öÒµÎñÂß¼­µÄÆğÖ¹×´Ì¬ĞèÒª´óÁ¿µÄ´úÂëĞŞ¸Ä£¬¼«Ò×Ôì³ÉÒµÎñÂß¼­´¦Àí´íÎó¡£
+* åœ¨å¼€å‘è¿‡ç¨‹ä¸­ï¼Œè‹¥å¢åŠ ä¸€ä¸ªçŠ¶æ€ã€ä¿®æ”¹ä¸€ä¸ªä¸šåŠ¡é€»è¾‘çš„èµ·æ­¢çŠ¶æ€éœ€è¦å¤§é‡çš„ä»£ç ä¿®æ”¹ï¼Œææ˜“é€ æˆä¸šåŠ¡é€»è¾‘å¤„ç†é”™è¯¯ã€‚
 
-ÕâÀï¼òÒªÒÔ¶©µ¥±íÎªÀı£¨Ã÷Ï¸¡¢ÎïÁ÷¡¢ÍË»õÍË¿îµÈ±í¸ñÂÔ£©¡£¼ÙÉè¶©µ¥ÓĞÒÔÏÂ¼¸ÖÖ×´Ì¬£¬×´Ì¬¼äÓĞ¼ıÍ·Ôò±íÊ¾
-ÔÊĞíÍ¨¹ıÒµÎñ²Ù×÷×ª»»×´Ì¬£¬·ñÔò²»ÔÊĞí¡£
+è¿™é‡Œç®€è¦ä»¥è®¢å•è¡¨ä¸ºä¾‹ï¼ˆæ˜ç»†ã€ç‰©æµã€é€€è´§é€€æ¬¾ç­‰è¡¨æ ¼ç•¥ï¼‰ã€‚å‡è®¾è®¢å•æœ‰ä»¥ä¸‹å‡ ç§çŠ¶æ€ï¼ŒçŠ¶æ€é—´æœ‰ç®­å¤´åˆ™è¡¨ç¤º
+å…è®¸é€šè¿‡ä¸šåŠ¡æ“ä½œè½¬æ¢çŠ¶æ€ï¼Œå¦åˆ™ä¸å…è®¸ã€‚
 
 ![]({{site.baseurl}}/images/post_images/2015-08-01-dev-quickOrderDesign/order.jpg)
 
 
-## 2 ×ÜÌåÉè¼Æ
+## 2 æ€»ä½“è®¾è®¡
 
-Éè¼Æ´óÖÂ·ÖÎª£º²éÑ¯¹ı³ÌÓÅ»¯¡¢Éè¼Æ²éÑ¯²ÎÊıÊı¾İ½á¹¹¡¢ÒıÈë×´Ì¬Éè¼ÆÄ£Ê½(State Design Pattern)¡¢Ôö¼ÓÒµÎñ¹ÜÀí²ã¡£
+è®¾è®¡å¤§è‡´åˆ†ä¸ºï¼šæŸ¥è¯¢è¿‡ç¨‹ä¼˜åŒ–ã€è®¾è®¡æŸ¥è¯¢å‚æ•°æ•°æ®ç»“æ„ã€å¼•å…¥çŠ¶æ€è®¾è®¡æ¨¡å¼(State Design Pattern)ã€å¢åŠ ä¸šåŠ¡ç®¡ç†å±‚ã€‚
 
-### 2.1 ²éÑ¯¹ı³ÌÓÅ»¯
+### 2.1 æŸ¥è¯¢è¿‡ç¨‹ä¼˜åŒ–
 
-JPA²éÑ¯Í¨¹ı±àĞ´HQLÍê³É£¬Í¨¹ı·â×°²éÑ¯·½·¨£¬ÊµÏÖÊäÈë<×Ö¶Î,Ä¿±êÖµ>µÄ¼üÖµ¶Ô²¢×Ô¶¯Éú³ÉHQLÍê³É²éÑ¯µÄ¹ı³Ì£¬Ê¡È¥ÁË±àĞ´HQLµÄ¹¤×÷Á¿£¬¶ÔÍâ²¿µ÷ÓÃÀ´Ëµ£¬ÊÇ²éÑ¯Ìõ¼ş´úÂë¸üÇåÎú¡£
+JPAæŸ¥è¯¢é€šè¿‡ç¼–å†™HQLå®Œæˆï¼Œé€šè¿‡å°è£…æŸ¥è¯¢æ–¹æ³•ï¼Œå®ç°è¾“å…¥<å­—æ®µ,ç›®æ ‡å€¼>çš„é”®å€¼å¯¹å¹¶è‡ªåŠ¨ç”ŸæˆHQLå®ŒæˆæŸ¥è¯¢çš„è¿‡ç¨‹ï¼Œçœå»äº†ç¼–å†™HQLçš„å·¥ä½œé‡ï¼Œå¯¹å¤–éƒ¨è°ƒç”¨æ¥è¯´ï¼Œæ˜¯æŸ¥è¯¢æ¡ä»¶ä»£ç æ›´æ¸…æ™°ã€‚
 
-´úÂëÈçÏÂ£º
+ä»£ç å¦‚ä¸‹ï¼š
 
 
 ```java
 
-// ¹¹ÔìHashMap<String, Object>À´´æ´¢²éÑ¯Ìõ¼ş¼üÖµ¶Ô×÷ÎªÊäÈë
-// ÊµÏÖÁË"SELECT FROM XXXX WHERE KEY1 = VALUE1 AND KEY2 = VALUE2 ...."²éÑ¯
+// æ„é€ HashMap<String, Object>æ¥å­˜å‚¨æŸ¥è¯¢æ¡ä»¶é”®å€¼å¯¹ä½œä¸ºè¾“å…¥
+// å®ç°äº†"SELECT FROM XXXX WHERE KEY1 = VALUE1 AND KEY2 = VALUE2 ...."æŸ¥è¯¢
 
 	@Override
 	public List<T> queryByStringEqualMap(HashMap<String, Object> map)
@@ -56,7 +56,7 @@ JPA²éÑ¯Í¨¹ı±àĞ´HQLÍê³É£¬Í¨¹ı·â×°²éÑ¯·½·¨£¬ÊµÏÖÊäÈë<×Ö¶Î,Ä¿±êÖµ>µÄ¼üÖµ¶Ô²¢×Ô¶¯Éú³
 			StringBuilder sql = new StringBuilder("SELECT o from "
 					+ getPersistentClass().getName() + " o WHERE ");
 			StringBuilder conStr = new StringBuilder("");
-			// Æ´½ÓÌõ¼ş
+			// æ‹¼æ¥æ¡ä»¶
 			for (String key : map.keySet()) {
 				Object value = map.get(key);
 				conStr = conStr.append(String.format(" o.%s = :%s and", key,
@@ -70,18 +70,18 @@ JPA²éÑ¯Í¨¹ı±àĞ´HQLÍê³É£¬Í¨¹ı·â×°²éÑ¯·½·¨£¬ÊµÏÖÊäÈë<×Ö¶Î,Ä¿±êÖµ>µÄ¼üÖµ¶Ô²¢×Ô¶¯Éú³
 			}
 			resultList = query.getResultList();
 		} catch (Exception e) {
-			throw new Exception("²éÑ¯Êı¾İ¿â³ö´í£¬ÇëÈ·ÈÏsqlÓï¾äÊÇ·ñÕıÈ·»òÕßÁ´½ÓÊÇ·ñÕıÈ·¡£"
+			throw new Exception("æŸ¥è¯¢æ•°æ®åº“å‡ºé”™ï¼Œè¯·ç¡®è®¤sqlè¯­å¥æ˜¯å¦æ­£ç¡®æˆ–è€…é“¾æ¥æ˜¯å¦æ­£ç¡®ã€‚"
 					+ e.getMessage());
 		}
 		if (resultList == null || (resultList != null && resultList.size() < 1)) {
 			return resultList;
-			// throw new BusinessWifiException("²éÑ¯½á¹ûÎª¿Õ");
+			// throw new BusinessWifiException("æŸ¥è¯¢ç»“æœä¸ºç©º");
 		} else
 			return resultList;
 	}
 	
 	
-// ²éÑ¯µÄÒ»°ã¹ı³Ì
+// æŸ¥è¯¢çš„ä¸€èˆ¬è¿‡ç¨‹
 
 	HashMap<String, Object> map = new HashMap<String, Object>();
 	map.put("KEY1", VALUE1);
@@ -92,15 +92,15 @@ JPA²éÑ¯Í¨¹ı±àĞ´HQLÍê³É£¬Í¨¹ı·â×°²éÑ¯·½·¨£¬ÊµÏÖÊäÈë<×Ö¶Î,Ä¿±êÖµ>µÄ¼üÖµ¶Ô²¢×Ô¶¯Éú³
 ```
 
 
-### 2.2 Éè¼Æ²éÑ¯²ÎÊıÊı¾İ½á¹¹
+### 2.2 è®¾è®¡æŸ¥è¯¢å‚æ•°æ•°æ®ç»“æ„
 
-ÕÂ½Ú2.1ÖĞµÄ²éÑ¯·½·¨ÈôÓ¦ÓÃÔÚ¶©µ¥±íµÈÓ¦ÓÃ³¡¾°ÖĞÊ±£¬ÈÔÈ»ÎŞ·¨±ÜÃâĞèÒª¼Ç×¡´óÁ¿×´Ì¬¶ÔÓ¦µÄ×Ö¶ÎÒÔ¼°³£Á¿ÖµµÄÎÊÌâ£¬Èç¹û³£Á¿ÖµÊäÈë´íÎó£¬½á¹ûÒ²ÊÇ²»ÕıÈ·µÄ¡£
+ç« èŠ‚2.1ä¸­çš„æŸ¥è¯¢æ–¹æ³•è‹¥åº”ç”¨åœ¨è®¢å•è¡¨ç­‰åº”ç”¨åœºæ™¯ä¸­æ—¶ï¼Œä»ç„¶æ— æ³•é¿å…éœ€è¦è®°ä½å¤§é‡çŠ¶æ€å¯¹åº”çš„å­—æ®µä»¥åŠå¸¸é‡å€¼çš„é—®é¢˜ï¼Œå¦‚æœå¸¸é‡å€¼è¾“å…¥é”™è¯¯ï¼Œç»“æœä¹Ÿæ˜¯ä¸æ­£ç¡®çš„ã€‚
 
-Òò´Ë£¬³ıÁËÉè¼Æ¾²Ì¬³£Á¿½â¾öÒÔÍâ£¬¿ÉÒÔÕë¶Ô¶©µ¥±íÉè¼ÆÖ§³ÖÁ´Ê½²Ù×÷µÄÊı¾İ½á¹¹ÔÚÊµÏÖ²éÑ¯Ìõ¼şµÄ¿ìËÙÆ´½Ó¡£±ÈÈç£º
+å› æ­¤ï¼Œé™¤äº†è®¾è®¡é™æ€å¸¸é‡è§£å†³ä»¥å¤–ï¼Œå¯ä»¥é’ˆå¯¹è®¢å•è¡¨è®¾è®¡æ”¯æŒé“¾å¼æ“ä½œçš„æ•°æ®ç»“æ„åœ¨å®ç°æŸ¥è¯¢æ¡ä»¶çš„å¿«é€Ÿæ‹¼æ¥ã€‚æ¯”å¦‚ï¼š
 
 ```java
 
-//¶©µ¥±íµÄ²éÑ¯Ìõ¼şÁ´Ê½½á¹¹Éè¼Æ£¨½áºÏÁË³£Á¿Ã¶¾ÙÀà£©
+//è®¢å•è¡¨çš„æŸ¥è¯¢æ¡ä»¶é“¾å¼ç»“æ„è®¾è®¡ï¼ˆç»“åˆäº†å¸¸é‡æšä¸¾ç±»ï¼‰
 public class OrderProductChainningMap {
 	
 	private HashMap<String, Object> map ;
@@ -110,7 +110,7 @@ public class OrderProductChainningMap {
 	}
 	
 	
-	//Ö§¸¶·½Ê½£ºÏÖ½ğ¡¢ÍøÂçÖ§¸¶
+	//æ”¯ä»˜æ–¹å¼ï¼šç°é‡‘ã€ç½‘ç»œæ”¯ä»˜
 	public OrderProductChainningMap setOrderPayType_CASH() {
 		this.map.put("orderPayType", OrderProductEnum.ORDERPAYTYPE_CASH.getCode_string());
 		return this;
@@ -122,7 +122,7 @@ public class OrderProductChainningMap {
 	
 	
 	
-	//×´Ì¬£ºÎ´Ö§¸¶¡¢ÒÑÖ§¸¶¡¢½Óµ¥¡¢¾Üµ¥¡¢ÅäËÍÖĞ¡¢È·ÈÏÊÕ»õ
+	//çŠ¶æ€ï¼šæœªæ”¯ä»˜ã€å·²æ”¯ä»˜ã€æ¥å•ã€æ‹’å•ã€é…é€ä¸­ã€ç¡®è®¤æ”¶è´§
 	public OrderProductChainningMap setOrderState_UNPAID() {
 		this.map.put("orderState", OrderProductEnum.ORDERSTATE_UNPAID.getCode_string());
 		return this;
@@ -151,7 +151,7 @@ public class OrderProductChainningMap {
 	
 	
 	
-	//ÓĞĞ§±êÖ¾£ºÓĞĞ§¡¢ÎŞĞ§
+	//æœ‰æ•ˆæ ‡å¿—ï¼šæœ‰æ•ˆã€æ— æ•ˆ
 	public OrderProductChainningMap setValidFlag_FALSE() {
 		this.map.put("validFlag", OrderProductEnum.VALIDFLAG_FALSE.getCode_string());
 		return this;
@@ -163,7 +163,7 @@ public class OrderProductChainningMap {
 	
 	
 	
-	//ÆäËû×Ö¶ÎÌõ¼şÉèÖÃ
+	//å…¶ä»–å­—æ®µæ¡ä»¶è®¾ç½®
 	public OrderProductChainningMap setMap(String key, Object obj) {
 		this.map.put(key, obj);
 		return this;
@@ -175,14 +175,14 @@ public class OrderProductChainningMap {
 
 ```
 
-¿ÉÒÔ¿´µ½£¬¸Ã½á¹¹µÄºËĞÄÈÔÈ»ÊÇHashMap<String, Object>£¬Ö»ÊÇÍâ°üÁËÒ»²ã£¬½«ÊôĞÔÉèÖÃÍ¨¹ı·½·¨±íÏÖ£¬²¢·µ»Ø½á¹¹×ÔÉí¡£Òò´Ë£¬¿ÉÒÔÁ¬ĞøÉèÖÃ²éÑ¯Ìõ¼ş¡£
-·½·¨ÈçÏÂ£º
+å¯ä»¥çœ‹åˆ°ï¼Œè¯¥ç»“æ„çš„æ ¸å¿ƒä»ç„¶æ˜¯HashMap<String, Object>ï¼Œåªæ˜¯å¤–åŒ…äº†ä¸€å±‚ï¼Œå°†å±æ€§è®¾ç½®é€šè¿‡æ–¹æ³•è¡¨ç°ï¼Œå¹¶è¿”å›ç»“æ„è‡ªèº«ã€‚å› æ­¤ï¼Œå¯ä»¥è¿ç»­è®¾ç½®æŸ¥è¯¢æ¡ä»¶ã€‚
+æ–¹æ³•å¦‚ä¸‹ï¼š
 
 ```java
 
 OrderProductChainningMap map = new OrderProductChainningMap();
 
-//ÓĞĞ§£¬Î´Ö§¸¶£¬ÏÖ½ğÖ§¸¶µÄ¶©µ¥Ìõ¼ş:
+//æœ‰æ•ˆï¼Œæœªæ”¯ä»˜ï¼Œç°é‡‘æ”¯ä»˜çš„è®¢å•æ¡ä»¶:
 map	.setValidFalg_TRUE()
 	.setOrderState_UNPAID()
 	.setOrderPayType_CASH();
@@ -192,39 +192,39 @@ List<Entity> result = entityDao.queryByStringEqualMap(map.getMap());
 
 ```
 
-### 2.3 ÒıÈë×´Ì¬Éè¼ÆÄ£Ê½
+### 2.3 å¼•å…¥çŠ¶æ€è®¾è®¡æ¨¡å¼
 
-×´Ì¬Ä£Ê½ÓÉ£º×´Ì¬½Ó¿Ú¡¢×´Ì¬Àà¡¢ÊµÌå°ü×°¹²Í¬ÊµÏÖ¡£
+çŠ¶æ€æ¨¡å¼ç”±ï¼šçŠ¶æ€æ¥å£ã€çŠ¶æ€ç±»ã€å®ä½“åŒ…è£…å…±åŒå®ç°ã€‚
 
-* ×´Ì¬½Ó¿Ú£ºÔ¤ÉèËùÓĞ×´Ì¬ÏÂ¿ÉÄÜµÄÒµÎñ²Ù×÷¡£
-* ×´Ì¬Àà£º¸Ã×´Ì¬ÏÂµÄÒµÎñ²Ù×÷¾ßÌåÊµÏÖ¡£
-* ÊµÌå°ü×°£º°üº¬ÊµÌå¡¢ÒÔ¼°µ±Ç°ÊµÌåËù´¦µÄ×´Ì¬£¬Ìá¹©ÒÀ¾İ×´Ì¬¶ÔÊµÌåµÄÒµÎñ²Ù×÷¡£
+* çŠ¶æ€æ¥å£ï¼šé¢„è®¾æ‰€æœ‰çŠ¶æ€ä¸‹å¯èƒ½çš„ä¸šåŠ¡æ“ä½œã€‚
+* çŠ¶æ€ç±»ï¼šè¯¥çŠ¶æ€ä¸‹çš„ä¸šåŠ¡æ“ä½œå…·ä½“å®ç°ã€‚
+* å®ä½“åŒ…è£…ï¼šåŒ…å«å®ä½“ã€ä»¥åŠå½“å‰å®ä½“æ‰€å¤„çš„çŠ¶æ€ï¼Œæä¾›ä¾æ®çŠ¶æ€å¯¹å®ä½“çš„ä¸šåŠ¡æ“ä½œã€‚
 
-Ö÷ÒªÖ´ĞĞË³ĞòÈçÏÂ£º
+ä¸»è¦æ‰§è¡Œé¡ºåºå¦‚ä¸‹ï¼š
 
-* 1.´ÓÊı¾İ¿âÖĞ²éÑ¯Êı¾İÊµÌåEntity£¬°ü×°³ÉÊµÌå°ü×°Wrapper£¬²¢¸ù¾İÊµÌåÊı¾İÉèÖÃ×´Ì¬State¡£
-* 2.¶ÔÊµÌåµÄÒµÎñ²Ù×÷Í¨¹ı°ü×°²Ù×÷£¬¶ø°ü×°Í¨¹ıµ±Ç°×´Ì¬ÀàµÄ¾ßÌåÒµÎñ²Ù×÷´úÂëÊµÏÖ¡£(Wrapper -> state -> doSth))
+* 1.ä»æ•°æ®åº“ä¸­æŸ¥è¯¢æ•°æ®å®ä½“Entityï¼ŒåŒ…è£…æˆå®ä½“åŒ…è£…Wrapperï¼Œå¹¶æ ¹æ®å®ä½“æ•°æ®è®¾ç½®çŠ¶æ€Stateã€‚
+* 2.å¯¹å®ä½“çš„ä¸šåŠ¡æ“ä½œé€šè¿‡åŒ…è£…æ“ä½œï¼Œè€ŒåŒ…è£…é€šè¿‡å½“å‰çŠ¶æ€ç±»çš„å…·ä½“ä¸šåŠ¡æ“ä½œä»£ç å®ç°ã€‚(Wrapper -> state -> doSth))
 
-ÈçÍ¼ËùÊ¾£º
+å¦‚å›¾æ‰€ç¤ºï¼š
 
-Ô­Controller - Service - Dao Ä£Ê½£º
+åŸController - Service - Dao æ¨¡å¼ï¼š
 
 ![]({{site.baseurl}}/images/post_images/2015-08-01-dev-quickOrderDesign/CSDPattern.jpg)
 
-Ç¶ÈëState Pattern DesignµÄ×´Ì¬Ä£Ê½£º
+åµŒå…¥State Pattern Designçš„çŠ¶æ€æ¨¡å¼ï¼š
 
 ![]({{site.baseurl}}/images/post_images/2015-08-01-dev-quickOrderDesign/stateDesign.jpg)
 
-´úÂë½á¹¹ÈçÏÂ£º
+ä»£ç ç»“æ„å¦‚ä¸‹ï¼š
 
-#### 2.3.1 ½Ó¿Ú
+#### 2.3.1 æ¥å£
 
 ```java
 
 public Interface IOrderState {
 
 	/**
-	 * ¾Üµ¥
+	 * æ‹’å•
 	 * @param user
 	 * @throws Exception
 	 */
@@ -232,14 +232,14 @@ public Interface IOrderState {
 	
 		
 	/**
-	 * ÅÉËÍ
+	 * æ´¾é€
 	 * @param user
 	 * @throws Exception
 	 */
 	public void deliverOrder(UserInfo user) throws Exception;
 	
 	/**
-	 * È¡Ïû¶©µ¥
+	 * å–æ¶ˆè®¢å•
 	 * @param customer
 	 * @throws Exception
 	 */
@@ -247,7 +247,7 @@ public Interface IOrderState {
 	
 		
 	/**
-	 * È·ÈÏÊÕ»õ
+	 * ç¡®è®¤æ”¶è´§
 	 * @param customer
 	 * @throws Exception
 	 */
@@ -258,16 +258,16 @@ public Interface IOrderState {
 
 ```
 
-#### 2.3.2 ×´Ì¬Àà
+#### 2.3.2 çŠ¶æ€ç±»
 
-×´Ì¬ÀàÖĞ¶¨ÒåÒµÎñ²Ù×÷Âß¼­£¬²¢¿ÉÒÔ¿ØÖÆµ±Ç°×´Ì¬ÊÇ·ñÔÊĞí¶ÔÊµÌå½øĞĞÄ³Ğ©²Ù×÷£¬²Ù×÷ºóµÄ×´Ì¬×ªÒÆ¡£
+çŠ¶æ€ç±»ä¸­å®šä¹‰ä¸šåŠ¡æ“ä½œé€»è¾‘ï¼Œå¹¶å¯ä»¥æ§åˆ¶å½“å‰çŠ¶æ€æ˜¯å¦å…è®¸å¯¹å®ä½“è¿›è¡ŒæŸäº›æ“ä½œï¼Œæ“ä½œåçš„çŠ¶æ€è½¬ç§»ã€‚
 
-´úÂëÈçÏÂ£¨ĞÂ¶©µ¥×´Ì¬¾ÙÀı£©£º
+ä»£ç å¦‚ä¸‹ï¼ˆæ–°è®¢å•çŠ¶æ€ä¸¾ä¾‹ï¼‰ï¼š
 
 ```java
 
 /**
- * ĞÂ¶©µ¥×´Ì¬ÊµÌåÀà
+ * æ–°è®¢å•çŠ¶æ€å®ä½“ç±»
  */
 public class OfflineNew implements IOrderProductState {
 	
@@ -279,7 +279,7 @@ public class OfflineNew implements IOrderProductState {
 
 	@Override
 	public void rejectOrder(UserInfo user) throws Exception {
-		// ¶©µ¥ÓĞĞ§±êÖ¾ÖÃÎªÎŞĞ§
+		// è®¢å•æœ‰æ•ˆæ ‡å¿—ç½®ä¸ºæ— æ•ˆ
 		this.order.getOrder().setValidFlag(OrderProductEnum.VALIDFLAG_FALSE.getCode_string());
 		this.order.setState(this.order.getRejected());
 	}
@@ -287,13 +287,13 @@ public class OfflineNew implements IOrderProductState {
 	
 	@Override
 	public void cancelOrder(Customer customer) throws Exception {
-		//¶©µ¥ÓĞĞ§±êÖ¾ÖÃÎªÎŞĞ§
+		//è®¢å•æœ‰æ•ˆæ ‡å¿—ç½®ä¸ºæ— æ•ˆ
 		this.order.getOrder().setValidFlag(OrderProductEnum.VALIDFLAG_FALSE.getCode_string());
 		this.order.setState(this.order.getCanceled());
 	}
 
 	
-	//ĞÂ¶©µ¥Î´ÅäËÍ£¬Òò´Ë²»ÄÜ½øĞĞÈ·ÈÏÊÕ»õ²Ù×÷£¬Òò´ËÈç¹ûÔÚ´Ë×´Ì¬ÏÂµ÷ÓÃ¸Ã²Ù×÷½«±¨´íÍË³ö
+	//æ–°è®¢å•æœªé…é€ï¼Œå› æ­¤ä¸èƒ½è¿›è¡Œç¡®è®¤æ”¶è´§æ“ä½œï¼Œå› æ­¤å¦‚æœåœ¨æ­¤çŠ¶æ€ä¸‹è°ƒç”¨è¯¥æ“ä½œå°†æŠ¥é”™é€€å‡º
 	@Override
 	public void deliverConfirm(Customer customer) throws Exception {
 		throw new Exception("Method rejected");		
@@ -302,7 +302,7 @@ public class OfflineNew implements IOrderProductState {
 	
 	@Override
 	public void deliverOrder(UserInfo user) throws Exception {
-		//¸Ä±ä×´Ì¬ÖÁÅäËÍÖĞ
+		//æ”¹å˜çŠ¶æ€è‡³é…é€ä¸­
 		this.order.getOrder().setOrderState(OrderProductEnum.ORDERSTATE_SHIFTING.getCode_string());
 		this.order.setState(this.order.getShifting());
 	}
@@ -311,9 +311,9 @@ public class OfflineNew implements IOrderProductState {
 
 ```
 
-#### 2.3.3 ÊµÌå°ü×°
+#### 2.3.3 å®ä½“åŒ…è£…
 
-³ĞÔØ¶©µ¥ÊµÌåÒÔ¼°¶©µ¥×´Ì¬ĞÅÏ¢µÄ°ü×°Àà£¬²¢ÔÚÀàÖĞ¿ª±ÙÁË²Ù×÷·½·¨£¬¾ßÌåÊµÏÖÓ¦¸ÃÔÚ×´Ì¬ÀàÖĞÊµÏÖ¡£
+æ‰¿è½½è®¢å•å®ä½“ä»¥åŠè®¢å•çŠ¶æ€ä¿¡æ¯çš„åŒ…è£…ç±»ï¼Œå¹¶åœ¨ç±»ä¸­å¼€è¾Ÿäº†æ“ä½œæ–¹æ³•ï¼Œå…·ä½“å®ç°åº”è¯¥åœ¨çŠ¶æ€ç±»ä¸­å®ç°ã€‚
 
 ```java
 
@@ -355,7 +355,7 @@ public class OrderProductWrapper {
 	}
 	
 	/**
-	 * ¾Üµ¥
+	 * æ‹’å•
 	 * @param user
 	 * @throws Exception
 	 */
@@ -368,7 +368,7 @@ public class OrderProductWrapper {
 	}
 	
 	/**
-	 * È¡Ïû¶©µ¥
+	 * å–æ¶ˆè®¢å•
 	 * @param customer
 	 * @throws Exception
 	 */
@@ -379,7 +379,7 @@ public class OrderProductWrapper {
 	
 	
 	/**
-	 * È·ÈÏÊÕ»õ
+	 * ç¡®è®¤æ”¶è´§
 	 * @param customer
 	 * @throws Exception
 	 */
@@ -389,12 +389,12 @@ public class OrderProductWrapper {
 	
 	
 	/**
-	 * ¸ù¾İ¶©µ¥ÊµÌåÉèÖÃ¸Ã°ü×°µÄ³õÊ¼×´Ì¬
+	 * æ ¹æ®è®¢å•å®ä½“è®¾ç½®è¯¥åŒ…è£…çš„åˆå§‹çŠ¶æ€
 	 */
 	private void setCurrentState(){
 		
-		//²»Ã÷Êö£¬Ö÷ÒªÊÇ¸ù¾İÊı¾İ¿â²éÑ¯µÄÊµÌå order µÄÏà¹Ø×Ö¶ÎµÄÖµÀ´ÉèÖÃµ±Ç°¶©µ¥µÄ×´Ì¬ state
-		//ÕâÑù¾Í¿ÉÒÔÔÚÏàÓ¦µÄ·½·¨ÖĞÀûÓÃstate½øĞĞÊµÌå²Ù×÷£ºstate.doSth();
+		//ä¸æ˜è¿°ï¼Œä¸»è¦æ˜¯æ ¹æ®æ•°æ®åº“æŸ¥è¯¢çš„å®ä½“ order çš„ç›¸å…³å­—æ®µçš„å€¼æ¥è®¾ç½®å½“å‰è®¢å•çš„çŠ¶æ€ state
+		//è¿™æ ·å°±å¯ä»¥åœ¨ç›¸åº”çš„æ–¹æ³•ä¸­åˆ©ç”¨stateè¿›è¡Œå®ä½“æ“ä½œï¼šstate.doSth();
 		
 		/*
 		 * state setting
@@ -453,13 +453,13 @@ public class OrderProductWrapper {
 
 ```
 
-### 2.4 Ôö¼ÓÒµÎñ¹ÜÀí²ã
+### 2.4 å¢åŠ ä¸šåŠ¡ç®¡ç†å±‚
 
-ÓÉÓÚÕû¸ö¶©µ¥´¦Àí²Ù×÷Éæ¼°¶àÕÅ±í£¬¶à¸ö¹ØÁª²Ù×÷£¬Òò´ËÕë¶Ô
-¶©µ¥¡¢¶©µ¥Ã÷Ï¸¡¢·¢\ÍË»õ¡¢Ö§¸¶ÈÕÖ¾....µÄÁ¬Ğø²Ù×÷¶¼Í¨¹ı¹ÜÀíÆ÷Í³Ò»Ğ­µ÷¡£±£Ö¤ÁËÕâ¸öÒµÎñµ÷¶ÈµÄÍêÕûĞÔ£¬²¢×îÖÕÓÉ
-¹ÜÀíÆ÷Íê³ÉÊı¾İµÄ³Ö¾Ã»¯¡£
+ç”±äºæ•´ä¸ªè®¢å•å¤„ç†æ“ä½œæ¶‰åŠå¤šå¼ è¡¨ï¼Œå¤šä¸ªå…³è”æ“ä½œï¼Œå› æ­¤é’ˆå¯¹
+è®¢å•ã€è®¢å•æ˜ç»†ã€å‘\é€€è´§ã€æ”¯ä»˜æ—¥å¿—....çš„è¿ç»­æ“ä½œéƒ½é€šè¿‡ç®¡ç†å™¨ç»Ÿä¸€åè°ƒã€‚ä¿è¯äº†è¿™ä¸ªä¸šåŠ¡è°ƒåº¦çš„å®Œæ•´æ€§ï¼Œå¹¶æœ€ç»ˆç”±
+ç®¡ç†å™¨å®Œæˆæ•°æ®çš„æŒä¹…åŒ–ã€‚
 
-ÔÚÕâÀï£¬Ö»Ğè´ÓÊı¾İ¿âÖĞ¶ÁÈ¡ÊµÌå£¬½øĞĞ°ü×°£¬Ö´ĞĞÒµÎñ²Ù×÷²¢Ğ´»ØÊı¾İ¿â¼´¿É¡£ÎŞĞè¹ØĞÄÄ³¸öÊµÌåÊÇ·ñ¿ÉÒÔÖ´ĞĞÄ³¸ö²Ù×÷£¬ÒòÎª¾ßÌåµÄ²Ù×÷£¬ÒÔ¼°ÊÇ·ñ¿ÉÒÔÖ´ĞĞÕâĞ©²Ù×÷¶¼ÒÑ¾­ÔÚ×´Ì¬Ä£Ê½ÖĞ×öºÃÁËÉè¼Æ¡£
+åœ¨è¿™é‡Œï¼Œåªéœ€ä»æ•°æ®åº“ä¸­è¯»å–å®ä½“ï¼Œè¿›è¡ŒåŒ…è£…ï¼Œæ‰§è¡Œä¸šåŠ¡æ“ä½œå¹¶å†™å›æ•°æ®åº“å³å¯ã€‚æ— éœ€å…³å¿ƒæŸä¸ªå®ä½“æ˜¯å¦å¯ä»¥æ‰§è¡ŒæŸä¸ªæ“ä½œï¼Œå› ä¸ºå…·ä½“çš„æ“ä½œï¼Œä»¥åŠæ˜¯å¦å¯ä»¥æ‰§è¡Œè¿™äº›æ“ä½œéƒ½å·²ç»åœ¨çŠ¶æ€æ¨¡å¼ä¸­åšå¥½äº†è®¾è®¡ã€‚
 
 ```java
 
@@ -468,7 +468,7 @@ public class OrderProcessManager {
 	@Resource(name = "OrderProductServiceImpl")
 	private OrderProductService orderProductService;
 
-	// È·ÈÏÊÕ»õ
+	// ç¡®è®¤æ”¶è´§
 	public void confirmOrder(String orderProductId, Customer customer) throws Exception {
 		OrderProduct order = orderProductService.findById(orderProductId);
 		OrderProductWrapper wrapper = new OrderProductWrapper(order);
@@ -476,7 +476,7 @@ public class OrderProcessManager {
 		orderProductService.update(wrapper.getOrder());
 	}
 
-	// È¡Ïû¶©µ¥
+	// å–æ¶ˆè®¢å•
 	public void cancelOrder(String orderProductId, Customer customer) throws Exception {
 		OrderProduct order = orderProductService.findById(orderProductId);
 		OrderProductWrapper wrapper = new OrderProductWrapper(order);
@@ -484,7 +484,7 @@ public class OrderProcessManager {
 		orderProductService.update(wrapper.getOrder());
 	}
 	
-	// ÅäËÍ¶©µ¥
+	// é…é€è®¢å•
 	public void deliverOrder(String orderProductId, UserInfo user) throws Exception {
 		OrderProduct order = orderProductService.findById(orderProductId);
 		OrderProductWrapper wrapper = new OrderProductWrapper(order);
@@ -492,7 +492,7 @@ public class OrderProcessManager {
 		orderProductService.update(wrapper.getOrder());
 	}
 	
-	// ¾Ü¾ø¶©µ¥
+	// æ‹’ç»è®¢å•
 	public void rejectOrder(String orderProductId, UserInfo user) throws Exception {
 		OrderProduct order = orderProductService.findById(orderProductId);
 		OrderProductWrapper wrapper = new OrderProductWrapper(order);
