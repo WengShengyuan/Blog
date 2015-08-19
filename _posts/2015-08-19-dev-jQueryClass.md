@@ -2,7 +2,7 @@
 layout: default
 title: jQuery自执行函数以及封装工具类的方法
 comments: true
-category: easyui
+category: java
 ---
 
 
