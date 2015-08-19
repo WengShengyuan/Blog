@@ -2,7 +2,7 @@
 layout: default
 title: WEB项目中一些简单异步任务的组织与调度方法
 comments: true
-category: easyui
+category: java
 ---
 
 在一些WEB项目中，为提升用户体验，一些耗时操作可以在用户提交后异步进行，而不需要立即显示执行结果。因此可以将这些操作委托给后台线程进行。
