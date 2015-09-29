@@ -117,7 +117,7 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: 嗡汤圆
-description: 由于百度无法爬到Git，因此转账CSDN，请移步:http://blog.csdn.net/tzdwsy  ^.^
+description: 由于百度无法爬到Git，因此转战CSDN，请移步:http://blog.csdn.net/tzdwsy  ^.^
 theme: hack
 disqusname: wengshengyuan
 
