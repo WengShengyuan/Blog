@@ -70,6 +70,7 @@ author:
             <p>这个博客是参考 minixalpha的博客为模板填充如自己的日志生成的。</p>
             <p>有很长一段时间我仅仅是使用为知笔记或者有道笔记来记录我的学习笔记，有的原创，也有摘录。很久以前我就想自己建立一个博客，但是苦于没有合适的地方，一些常规的博客网站不能随心所欲得定制样式，最终还是Github比较理想，而且还能顺带托管我的一些代码。虽然这些代码很low，但是总能养成一个良好的维护习惯，不至于辛辛苦苦写的一些代码最终被一不小心删除。</p>
             <p>最后感谢minixalpha能提供如此方便快捷的博客框架。</p>
+            <h3>由于百度无法爬到Git，因此转账CSDN，请移步:http://blog.csdn.net/tzdwsy  ^.^</h3>
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
@@ -116,7 +117,7 @@ markdown: redcarpet
 safe: false
 highlighter: pygments
 title: 嗡汤圆
-description: 东学学，西抄抄，老老实实敲代码
+description: 由于百度无法爬到Git，因此转账CSDN，请移步:http://blog.csdn.net/tzdwsy  ^.^
 theme: hack
 disqusname: wengshengyuan
 
