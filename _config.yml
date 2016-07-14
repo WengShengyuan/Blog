@@ -112,7 +112,7 @@ disqus:
 
 #################################### global configure #######################################
 username: wengshengyuan
-baseurl: /Blog
+baseurl: /
 markdown: redcarpet
 safe: false
 highlighter: pygments
